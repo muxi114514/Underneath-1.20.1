@@ -1,0 +1,804 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "witch",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.adv_pot_making.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.adv_pot_making.page.2\\\"}]\"\n                ],\n                title:\"Advanced Potion Making\",\n                locTitle:\"rldregora.witch.adv_pot_making.title\",\n                author:\"Steven Heiran\",\n                locAuthor:\"rldregora.witch.adv_pot_making.author\",\n                display:{Lore:['{\"text\":\"This book\\'s illustrations indicates this is a book about \"}','{\"text\":\"potions and the ingredients used to make them. \"}','{\"text\":\"If only this book was written in common text it \"}','{\"text\":\"could\\'ve been of some use.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.mechanic.page.1\\\"}]\"\n                ],\n                title:\"Book of the Mechanic\",\n                locTitle:\"rldregora.witch.mechanic.title\",\n                author:\"Baldy Blabbers\",\n                locAuthor:\"rldregora.witch.mechanic.author\",\n                display:{Lore:['{\"text\":\"This book contains various illustrations on basic\"}','{\"text\":\"spring powered mechanics.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.ghouls.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.ghouls.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.ghouls.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.ghouls.page.4\\\"}]\"\n                ],\n                title:\"Book of Ghouls\",\n                locTitle:\"rldregora.witch.ghouls.title\",\n                author:\"Ghoul\",\n                locAuthor:\"rldregora.witch.ghouls.author\",\n                display:{Lore:['{\"text\":\"The writings of many men yet only one who has written.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.twilight.page.1\\\"}]\"\n                ],\n                title:\"At Twilight\",\n                locTitle:\"rldregora.witch.twilight.title\",\n                author:\"The Dark Witch\",\n                locAuthor:\"rldregora.witch.twilight.author\",\n                display:{Lore:['{\"text\":\"Dark Omen\"}'],Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}]}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.witch.creep.page.1\\\"}]\"\n                ],\n                title:\"At night they creep\",\n                locTitle:\"rldregora.witch.creep.title\",\n                author:\"The Dark Witch\",\n                locAuthor:\"rldregora.witch.creep.author\",\n                display:{Lore:['{\"text\":\"Dark Omen\"}'],Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}]}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "witch_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:mundane\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:thick\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:fire_resistance\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:night_vision\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strength\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:harming\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_strength\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:mundane\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:thick\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:fire_resistance\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:night_vision\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strength\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:harming\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_strength\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:mundane\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:thick\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:fire_resistance\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:night_vision\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strength\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:harming\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_strength\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fermented_spider_eye",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spider_eye",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:milk_bucket",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sugar",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dandelion",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:poppy",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cauldron",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone_meal",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 7
+        }
+      ]
+    }
+  ]
+}

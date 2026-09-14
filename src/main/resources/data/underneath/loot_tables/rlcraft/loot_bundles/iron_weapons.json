@@ -1,0 +1,492 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "rlcraft weapons",
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_dagger",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_longsword",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_katana",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_saber",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_rapier",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_greatsword",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_battle_hammer",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_warhammer",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_spear",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_halberd",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_pike",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_lance",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_throwing_knife",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_tomahawk",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_javelin",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_boomerang",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_battleaxe",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_flanged_mace",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_glaive",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_quarterstaff",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

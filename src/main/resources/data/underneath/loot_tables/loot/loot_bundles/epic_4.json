@@ -1,0 +1,331 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Cursed Chest",
+  "pools": [
+    {
+      "name": "epic Chest",
+      "rolls": 2,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Troll Nugget\"}',Lore:['{\"text\":\"This nugget is truly, truly cursed...\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bane_of_arthropods",
+                "binding_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "aqua_affinity",
+                "bane_of_arthropods",
+                "blast_protection",
+                "binding_curse",
+                "vanishing_curse",
+                "depth_strider",
+                "efficiency",
+                "feather_falling",
+                "fire_aspect",
+                "fire_protection",
+                "flame",
+                "fortune",
+                "frost_walker",
+                "infinity",
+                "knockback",
+                "looting",
+                "luck_of_the_sea",
+                "lure",
+                "power",
+                "projectile_protection",
+                "protection",
+                "punch",
+                "respiration",
+                "sharpness",
+                "silk_touch",
+                "smite",
+                "sweeping",
+                "thorns",
+                "unbreaking",
+                "mending"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of Dying\"}',Lore:['{\"text\":\"Living on the edge gives you a adrenaline boost!\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "aqua_affinity",
+                "bane_of_arthropods",
+                "blast_protection",
+                "binding_curse",
+                "vanishing_curse",
+                "depth_strider",
+                "efficiency",
+                "feather_falling",
+                "fire_aspect",
+                "fire_protection",
+                "flame",
+                "fortune",
+                "frost_walker",
+                "infinity",
+                "knockback",
+                "looting",
+                "luck_of_the_sea",
+                "lure",
+                "power",
+                "projectile_protection",
+                "protection",
+                "punch",
+                "respiration",
+                "sharpness",
+                "silk_touch",
+                "smite",
+                "sweeping",
+                "thorns",
+                "unbreaking"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": -0.85,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": 0.05,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 5,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": -0.85,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": 0.05,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 5,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Heavy Hoe\"}',Lore:['{\"text\":\"It\\'s a heavy one!\"}']}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 15,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.01,
+                    "max": -0.05
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_boots",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Boots of Dexterity\"}',Lore:['{\"text\":\"These boots makes you more dexterous but at a price.\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "aqua_affinity",
+                "bane_of_arthropods",
+                "blast_protection",
+                "binding_curse",
+                "vanishing_curse",
+                "depth_strider",
+                "efficiency",
+                "feather_falling",
+                "fire_aspect",
+                "fire_protection",
+                "flame",
+                "fortune",
+                "frost_walker",
+                "infinity",
+                "knockback",
+                "looting",
+                "luck_of_the_sea",
+                "lure",
+                "power",
+                "projectile_protection",
+                "protection",
+                "punch",
+                "respiration",
+                "sharpness",
+                "silk_touch",
+                "smite",
+                "sweeping",
+                "thorns",
+                "unbreaking"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": -1,
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                },
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.02
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shield",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corrupted Dragonfire Shield\"}',Lore:['{\"text\":\"Grants some protection against fire, knockback and explosions.\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:blast_protection\",lvl:4s},{id:\"minecraft:fire_protection\",lvl:4s}]}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:\"cbo\"},{Color:15,Pattern:\"rs\"},{Color:5,Pattern:\"flo\"},{Color:0,Pattern:\"ms\"},{Color:15,Pattern:\"tt\"},{Color:0,Pattern:\"moj\"}]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.knockback_resistance",
+                  "name": "movementSpeed",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

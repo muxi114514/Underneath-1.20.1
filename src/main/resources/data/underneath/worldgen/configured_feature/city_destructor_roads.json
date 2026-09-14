@@ -1,0 +1,23 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "citydestructor02",
+        "chance": 100
+      },
+      {
+        "name": "citydestructor03",
+        "chance": 100
+      }
+    ],
+    "attempts": 10,
+    "anchor": "random",
+    "min_y": 70,
+    "max_y": 255,
+    "y_offset": 0,
+    "random_rotation": false,
+    "on_blocks": [],
+    "mode": "tree"
+  }
+}

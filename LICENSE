@@ -1,0 +1,16 @@
+All Rights Reserved
+
+Copyright (c) 2026 MX (muxi114514)
+
+No part of this repository may be reproduced, distributed, or transmitted in
+any form or by any means without the prior written permission of the copyright
+holder, except for personal use within Minecraft modpacks that this mod is
+designed to serve.
+
+Third-party content notice:
+- This mod is a faithful recreation of the "Underneath" OTG preset dimension
+  from RLCraft Dregora, originally created by NLBlackEagle & Shivaxi. The
+  adapted worldgen data (BO structures, block-entity data, loot tables) remains
+  attributed to its original authors.
+- Structure plotting and terrain algorithms are ported from OpenTerrainGenerator
+  (1.12) semantics for compatibility purposes.

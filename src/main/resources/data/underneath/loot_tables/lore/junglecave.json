@@ -1,0 +1,331 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "junglecaves",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.spelunker.page.8\\\"}]\"\n                ],\n                title:\"Spelunker's Notebook\",\n                locTitle:\"rldregora.junglecave.spelunker.title\",\n                author:\"Spelunker\",\n                locAuthor:\"rldregora.junglecave.spelunker.author\",\n                display:{Lore:['{\"text\":\"A book with illustrations and some notes. most likely written by a spelunker.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.book_builds.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.book_builds.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.book_builds.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.book_builds.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.book_builds.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.book_builds.page.6\\\"}]\"\n                ],\n                title:\"Book of Builds\",\n                locTitle:\"rldregora.junglecave.book_builds.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.junglecave.book_builds.author\",\n                display:{Lore:['{\"text\":\"This book has it\\'s title pressed in. The written words and illustrations have been faded over \"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.encyclopedia.page.1\\\"}]\"\n                ],\n                title:\"Encyclopedia\",\n                locTitle:\"rldregora.junglecave.encyclopedia.title\",\n                author:\"unknown\",\n                locAuthor:\"rldregora.junglecave.encyclopedia.author\",\n                display:{Lore:['{\"text\":\"A Dusty, blank book which title says Encyclopedia.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.northmen_prospecting.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.northmen_prospecting.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.northmen_prospecting.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.northmen_prospecting.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.northmen_prospecting.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.northmen_prospecting.page.6\\\"}]\"\n                ],\n                title:\"Northmen's Prospecting\",\n                locTitle:\"rldregora.junglecave.northmen_prospecting.title\",\n                author:\"Northmen\",\n                locAuthor:\"rldregora.junglecave.northmen_prospecting.author\",\n                display:{Lore:['{\"text\":\"A detailed log about valuables. Knowledge worth knowing.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.adventurer_diary.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.adventurer_diary.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.adventurer_diary.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.adventurer_diary.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.adventurer_diary.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.adventurer_diary.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglecave.adventurer_diary.page.7\\\"}]\"\n                ],\n                title:\"Adventurer's Diary\",\n                locTitle:\"rldregora.junglecave.adventurer_diary.title\",\n                author:\"D'kar Origins\",\n                locAuthor:\"rldregora.junglecave.adventurer_diary.author\",\n                display:{Lore:['{\"text\":\"This book contains basic information on biomes.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "junglecaves_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}"
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:potion\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_slice",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

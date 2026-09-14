@@ -1,0 +1,259 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "shipfloat",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.reclaiming_world.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.reclaiming_world.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.reclaiming_world.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.reclaiming_world.page.4\\\"}]\"\n                ],\n                title:\"Reclaiming the World\",\n                locTitle:\"rldregora.shipfloat.reclaiming_world.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.shipfloat.reclaiming_world.author\",\n                display:{Lore:['{\"text\":\"A very old book.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.city_origin.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.city_origin.page.2\\\"}]\"\n                ],\n                title:\"City of Origin\",\n                locTitle:\"rldregora.shipfloat.city_origin.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.shipfloat.city_origin.author\",\n                display:{Lore:['{\"text\":\"A very old book.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.kingdoms_creation.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.kingdoms_creation.page.2\\\"}]\"\n                ],\n                title:\"Kingdom's Creation\",\n                locTitle:\"rldregora.shipfloat.kingdoms_creation.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.shipfloat.kingdoms_creation.author\",\n                display:{Lore:['{\"text\":\"A very old book.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.10\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.sighting_pirates_hope.page.11\\\"}]\"\n                ],\n                title:\"A Sighting, Pirates, and Hope\",\n                locTitle:\"rldregora.shipfloat.sighting_pirates_hope.title\",\n                author:\"Lucky Fred\",\n                locAuthor:\"rldregora.shipfloat.sighting_pirates_hope.author\",\n                display:{Lore:['{\"text\":\"A small story of luck, chance and hope.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.from_edge.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.from_edge.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.shipfloat.from_edge.page.3\\\"}]\"\n                ],\n                title:\"From the Edge\",\n                locTitle:\"rldregora.shipfloat.from_edge.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.shipfloat.from_edge.author\",\n                display:{Lore:['{\"text\":\"A note from an explorer who saw it all.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "shipfloat_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:salmon",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ladder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_ore",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

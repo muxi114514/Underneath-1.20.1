@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "underneath:block/concrete_slab_reinforced",
+    "top": "underneath:block/concrete_slab_reinforced",
+    "side": "underneath:block/concrete_slab_reinforced"
+  }
+}

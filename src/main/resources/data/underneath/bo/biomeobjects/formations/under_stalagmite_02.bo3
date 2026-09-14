@@ -1,0 +1,56 @@
+Author: NLBlackEagle
+Description: No description given
+Version: 3
+SettingsMode: WriteWithoutComments
+Tree: true
+Frequency: 0
+Rarity: 100.0
+RotateRandomly: true
+SpawnHeight: randomY
+SpawnHeightOffset: 0
+SpawnHeightVariance: 0
+MinHeight: 63
+MaxHeight: 73
+ExtrudeMode: None
+ExtrudeThroughBlocks: AIR
+MaxBranchDepth: 10
+ExcludedBiomes: All
+SourceBlocks: AIR
+MaxPercentageOutsideSourceBlock: 0
+OutsideSourceBlock: placeAnyway
+DoReplaceBlocks: true
+IsOTGPlus: false
+Block(-1,1,-1,quark:basalt)
+Block(-1,1,0,quark:basalt)
+Block(-1,2,0,STAINED_GLASS_PANE:14)
+Block(-1,3,0,STAINED_GLASS_PANE:14)
+Block(-1,4,0,STAINED_GLASS_PANE:14)
+Block(0,1,-1,quark:basalt)
+Block(0,1,0,quark:crystal:1)
+Block(0,1,1,quark:crystal:1)
+Block(0,2,-1,quark:crystal:1)
+Block(0,2,0,quark:basalt)
+Block(0,2,1,quark:crystal:1)
+Block(0,3,-1,STAINED_GLASS_PANE:14)
+Block(0,3,0,quark:basalt)
+Block(0,3,1,quark:crystal:1)
+Block(0,4,-1,STAINED_GLASS_PANE:14)
+Block(0,4,0,quark:basalt)
+Block(0,4,1,STAINED_GLASS_PANE:14)
+Block(0,5,-1,STAINED_GLASS_PANE:14)
+Block(0,5,0,quark:basalt)
+Block(0,6,0,quark:basalt)
+Block(0,7,0,quark:basalt)
+Block(0,8,0,quark:basalt_speleothem:2)
+Block(0,9,0,quark:basalt_speleothem)
+Block(0,10,0,quark:basalt_speleothem:0)
+Block(1,1,0,quark:crystal:1)
+Block(1,2,0,STAINED_GLASS_PANE:14)
+Block(1,3,0,STAINED_GLASS_PANE:14)
+BlockCheckNot(0,0,0,CONCRETE)
+BlockCheck(1,0,0,Solid)
+BlockCheck(-1,0,-1,Solid)
+BlockCheck(-1,0,0,Solid)
+BlockCheck(0,0,-1,Solid)
+BlockCheck(0,0,0,Solid)
+BlockCheck(0,0,1,Solid)

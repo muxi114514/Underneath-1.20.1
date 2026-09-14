@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:city_chestfiller_lower",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:city_destructor_main_dense",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

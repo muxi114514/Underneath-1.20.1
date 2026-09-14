@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:city_destructor_roads",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

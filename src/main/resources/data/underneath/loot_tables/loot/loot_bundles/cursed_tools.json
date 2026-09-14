@@ -1,0 +1,2125 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Chest",
+  "pools": [
+    {
+      "name": "Cursed Weapon Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Stone Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Stone Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Stone Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Stone Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Stone Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Stone Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Stone Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Stone Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Stone Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Stone Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Stone Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Stone Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Stone Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Stone Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Stone Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Stone Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Stone Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Stone Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Stone Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Stone Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Stone Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Stone Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Stone Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Stone Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Shovel\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Axe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Pickaxe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:mending\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Hoe\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

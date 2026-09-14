@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_castle_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Castle Ruins\"}',Lore:['{\"text\":\"The map seems unusable apart from a set of coordinates\"}','{\"text\":\"x:-14202 z:-6004\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-14202,z:-6004}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_castle_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"x:-14202 z:-6004\"}',Lore:['{\"text\":\"Ruins undisturbed and lands undiscovered.\"}']}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_castle_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cracked_stone_bricks",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

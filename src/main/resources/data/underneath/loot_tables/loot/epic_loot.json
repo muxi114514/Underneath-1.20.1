@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Epic Default",
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/desert_pyramid",
+          "weight": 6
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/simple_dungeon",
+          "weight": 6
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/end_city_treasure",
+          "weight": 3
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/stronghold_library",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_epic/unique_main_epic",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "name": "Epic Custom",
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_tools",
+          "weight": 3
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_chaos",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_potions",
+          "weight": 2
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_arrows",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Epic Bundles",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_1",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_2",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_3",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_4",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

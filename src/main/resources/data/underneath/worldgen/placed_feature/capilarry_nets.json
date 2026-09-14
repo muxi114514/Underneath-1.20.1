@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:capilarry_nets",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

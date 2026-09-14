@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Disorganized with levitation and blindness + resistance troll",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "\n              {\n                Potion:\"potioncore:disorganization\",\n                display:{Name:'{\"text\":\"Potion of Blessed Sun\"}',Lore:['{\"text\":\"\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+1 life if used outside\"}','{\"text\":\"§c-1 life if used inside.\"}','{\"text\":\"§0☠\"}']},\n                CustomPotionEffects:[{Id:15,Duration:100},{Id:25,Duration:20,Amplifier:100},{Id:11,Duration:200,Amplifier:4}],\n                HideFlags:32\n              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ],
+              "tag": "\n              {\n                Potion:\"potioncore:disorganization\",\n                display:{Name:'{\"text\":\"Potion of Blessed Sun\"}',Lore:['{\"text\":\"\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+1 life if used outside\"}','{\"text\":\"§c-1 life if used inside.\"}','{\"text\":\"§0☹\"}']},\n                CustomPotionEffects:[{Id:15,Duration:100},{Id:25,Duration:20,Amplifier:100},{Id:11,Duration:200,Amplifier:4}],\n                HideFlags:32\n              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Epic Chest",
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/desert_pyramid",
+          "weight": 6
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/simple_dungeon",
+          "weight": 6
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/end_city_treasure",
+          "weight": 3
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/stronghold_library",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_epic/unique_main_epic",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "name": "Epic Chest",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_moderncity/epic_old_tools",
+          "weight": 3
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_moderncity/epic_old_arrows",
+          "weight": 2
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_tools",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_potions",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_arrows",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "name": "Enchant",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "city like loot",
+      "rolls": {
+        "min": 2,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:sugar",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:green_carpet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Torn Carpet\"}',Lore:['{\"text\":\"Ancient Carpet, masterfully crafted yet very damaged.\"}']}}"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 10\"}'],LocLoreArg:[\"10\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 20\"}'],LocLoreArg:[\"20\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 50\"}'],LocLoreArg:[\"50\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 100\"}'],LocLoreArg:[\"100\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:heavy_weighted_pressure_plate",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_weighted_pressure_plate",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit_hide",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:quartz",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:firework_rocket",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bookshelf",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_blocks",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

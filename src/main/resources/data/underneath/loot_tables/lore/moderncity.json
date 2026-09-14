@@ -1,0 +1,461 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "moderncity",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.pillars_heaven.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.pillars_heaven.page.2\\\"}]\"\n                ],\n                title:\"Pillars of Heaven\",\n                locTitle:\"rldregora.moderncity.pillars_heaven.title\",\n                author:\"Scavenger\",\n                locAuthor:\"rldregora.moderncity.pillars_heaven.author\",\n                display:{Lore:['{\"text\":\"The journey of a scavenger and some of their findings.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.wasted_earth_bones_death.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.wasted_earth_bones_death.page.2\\\"}]\"\n                ],\n                title:\"Wasted Earth, Bones and Death\",\n                locTitle:\"rldregora.moderncity.wasted_earth_bones_death.title\",\n                author:\"Explorer\",\n                locAuthor:\"rldregora.moderncity.wasted_earth_bones_death.author\",\n                display:{Lore:['{\"text\":\"The story of a explorer gotten lost.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.end_mydays.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.end_mydays.page.2\\\"}]\"\n                ],\n                title:\"The end of my days\",\n                locTitle:\"rldregora.moderncity.end_mydays.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.moderncity.end_mydays.author\",\n                display:{Lore:['{\"text\":\"The final scribbles of someone unable to escape.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.skeletons_past.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.skeletons_past.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.skeletons_past.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.skeletons_past.page.4\\\"}]\"\n                ],\n                title:\"Skeletons of the past\",\n                locTitle:\"rldregora.moderncity.skeletons_past.title\",\n                author:\"Archaeologist\",\n                locAuthor:\"rldregora.moderncity.skeletons_past.author\",\n                display:{Lore:['{\"text\":\"A stained notebook by a archaeologist\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.demise_looter.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.moderncity.demise_looter.page.2\\\"}]\"\n                ],\n                title:\"The Demise of a looter\",\n                locTitle:\"rldregora.moderncity.demise_looter.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.moderncity.demise_looter.author\",\n                display:{Lore:['{\"text\":\"The last will of a foolish person.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "moderncity_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:fishing_rod_wood",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:firework_star",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:firework_rocket",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ender_pearl",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:slime_ball",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cauldron",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 13
+        }
+      ]
+    }
+  ]
+}

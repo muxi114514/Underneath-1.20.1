@@ -1,0 +1,19 @@
+Author: Bo3 BulkEdit
+Description: Converted Schematic - Modified by Bo3BulkEdit
+Version: 3
+SettingsMode: WriteDisable
+IsOTGPlus: true
+Tree: false
+Frequency: 1
+Rarity: 100.0
+RotateRandomly: false
+SpawnHeight: randomY
+MaxBranchDepth: 10
+ExcludedBiomes: All
+MinHeight: 0
+MaxHeight: 255
+CanOverride: true
+MaxPercentageOutsideSourceBlock: 100
+OutsideSourceBlock: placeAnyway
+BO3Group: CeilingCrystals:0
+BR(0,0,0,true,CEILING_SPIKE-SET-MED-BIG-09_0x0,NORTH,100,0)

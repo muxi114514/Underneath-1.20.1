@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_icetemple_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Temple of Winter\"}',Lore:['{\"text\":\"The map seems unusable apart from a set of coordinates\"}','{\"text\":\"Area Around x:14273 z:7038\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:14273,z:7038}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_icetemple_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"x:14273 z:7038\"}',Lore:['{\"text\":\"Spikes crossing at four points, as deadly as the careless adventurer.\"}']}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

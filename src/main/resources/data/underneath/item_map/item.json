@@ -1,0 +1,7 @@
+{
+  "__comment__": "物品 id 映射（箱内/怪物装备；未列出的原样放行）。VC 物品已换用 variedcommodities 1.20.1 移植版真身（原名直传）；坏前缀 ariedcommodities 修复条目保留。__substituted__ 组=仍为近似替代的条目。",
+  "spartanweaponry:arrow_explosive": "spartanweaponry:explosive_arrow",
+  "ariedcommodities:soldier_legs": "variedcommodities:soldier_legs",
+  "ariedcommodities:commissar_legs": "variedcommodities:commissar_legs",
+  "ariedcommodities:nanorum_legs": "variedcommodities:nanorum_legs"
+}

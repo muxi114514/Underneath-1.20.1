@@ -1,0 +1,114 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Special Resources",
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/junk_weapons",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:stone_loose_rock",
+          "weight": 50
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/rlcraft_music",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/junk_weapons",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "underneath:flesh",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:stone_loose_rock",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:andesite_loose_rock",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:granite_loose_rock",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:diorite_loose_rock",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:sandstone_loose_rock",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:red_sandstone_loose_rock",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clay_ball",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cocoa_beans",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "ancient",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.the_encounter.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.the_encounter.page.2\\\"}]\"\n                ],\n                title:\"The Encounter\",\n                locTitle:\"rldregora.ancient.the_encounter.title\",\n                author:\"Navigational Officer\",\n                locAuthor:\"rldregora.ancient.the_encounter.author\",\n                display:{Lore:['{\"text\":\"A old book, signed by the Dregorian Voyager navigational officer\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.logbook.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.logbook.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.logbook.page.3\\\"}]\"\n                ],\n                title:\"Logbook\",\n                locTitle:\"rldregora.ancient.logbook.title\",\n                author:\"Ecologist\",\n                locAuthor:\"rldregora.ancient.logbook.author\",\n                display:{Lore:['{\"text\":\"An old book signed by a Dregorian Ecologist\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.soldiers_diary.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.soldiers_diary.page.2\\\"}]\"\n                ],\n                title:\"Soldier's Diary\",\n                locTitle:\"rldregora.ancient.soldiers_diary.title\",\n                author:\"Soldier\",\n                locAuthor:\"rldregora.ancient.soldiers_diary.author\",\n                display:{Lore:['{\"text\":\"An old book signed by a Dregorian Soldier\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.captains_log.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.captains_log.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.captains_log.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.captains_log.page.4\\\"}]\"\n                ],\n                title:\"Captain's Log\",\n                locTitle:\"rldregora.ancient.captains_log.title\",\n                author:\"Dregorian Captain\",\n                locAuthor:\"rldregora.ancient.captains_log.author\",\n                display:{Lore:['{\"text\":\"An old book signed by the captain of the Dregorian Voyager\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.adventurers_log.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.ancient.adventurers_log.page.2\\\"}]\"\n                ],\n                title:\"Adventurer's Log\",\n                locTitle:\"rldregora.ancient.adventurers_log.title\",\n                author:\"Khaldir Murdok\",\n                locAuthor:\"rldregora.ancient.adventurers_log.author\",\n                display:{Lore:['{\"text\":\"A lost note from Khaldir\\'s Log.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "ancient_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mellohi",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mall",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_13",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_ward",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_blocks",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:firework_star",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_horse_armor",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

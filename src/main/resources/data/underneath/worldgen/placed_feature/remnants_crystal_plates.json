@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:remnants_crystal_plates",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

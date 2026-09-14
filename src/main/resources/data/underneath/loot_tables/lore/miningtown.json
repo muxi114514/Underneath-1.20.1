@@ -1,0 +1,358 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "miningtown",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.last_resident.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.last_resident.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.last_resident.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.last_resident.page.4\\\"}]\"\n                ],\n                title:\"The last resident\",\n                locTitle:\"rldregora.miningtown.last_resident.title\",\n                author:\"Chief Mullard\",\n                locAuthor:\"rldregora.miningtown.last_resident.author\",\n                display:{Lore:['{\"text\":\"A dusty, superficially damaged book.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.red_emeralds.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.red_emeralds.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.red_emeralds.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.red_emeralds.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.red_emeralds.page.5\\\"}]\"\n                ],\n                title:\"Red Tainted Emeralds\",\n                locTitle:\"rldregora.miningtown.red_emeralds.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.miningtown.red_emeralds.author\",\n                display:{Lore:['{\"text\":\"A very expensive looking book.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.10\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.11\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.perfect_rocks.page.12\\\"}]\"\n                ],\n                title:\"Perfect Rocks\",\n                locTitle:\"rldregora.miningtown.perfect_rocks.title\",\n                author:\"Dwargon the lone Miner\",\n                locAuthor:\"rldregora.miningtown.perfect_rocks.author\",\n                display:{Lore:['{\"text\":\"Encounter in the mountains.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.holed_up.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.holed_up.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.holed_up.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.holed_up.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.holed_up.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.holed_up.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.holed_up.page.7\\\"}]\"\n                ],\n                title:\"Holed Up\",\n                locTitle:\"rldregora.miningtown.holed_up.title\",\n                author:\"Oleg the Miner\",\n                locAuthor:\"rldregora.miningtown.holed_up.author\",\n                display:{Lore:['{\"text\":\"They came from outside, not within.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.survey_depth.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.survey_depth.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.miningtown.survey_depth.page.3\\\"}]\"\n                ],\n                title:\"Survey of the depth\",\n                locTitle:\"rldregora.miningtown.survey_depth.title\",\n                author:\"Oleg the Miner\",\n                locAuthor:\"rldregora.miningtown.survey_depth.author\",\n                display:{Lore:['{\"text\":\"A description of what lies below.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "emerald",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Earthern Rose\"}',Lore:['{\"text\":\"The stone bears teeth yet somehow you feel safer holding it in your off-hand.\"}']}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "More armor",
+                  "amount": {
+                    "min": -2.0,
+                    "max": -5.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armor",
+                  "name": "More armor",
+                  "amount": {
+                    "min": 1.0,
+                    "max": 6.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "miningtown_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest_minecart",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:minecart",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:dead_trees_big_underforest",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

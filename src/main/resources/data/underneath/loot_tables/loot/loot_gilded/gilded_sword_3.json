@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "gilded_sword_3",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sneezing Sword\"}',Lore:['{\"text\":\"Unpredictable but Versatile.\"}']}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:1s},{id:\"minecraft:silk_touch\",lvl:1s},{id:\"minecraft:smite\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:1s},{id:\"minecraft:fortune\",lvl:1s},{id:\"minecraft:knockback\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:looting\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:sweeping\",lvl:1s}],HideFlags:3,RepairCost:100}"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.9
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gilded_book_1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sasuke\\'s Grave\"}'}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.follow_range",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

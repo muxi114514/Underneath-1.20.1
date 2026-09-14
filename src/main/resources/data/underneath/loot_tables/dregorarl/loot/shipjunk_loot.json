@@ -1,0 +1,172 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "shipjunk_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/shipjunk_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "shipjunk_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "locks:wood_lock_pick",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "vinery:dark_cherry_barrel",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lantern",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lead",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:banjo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:candle",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

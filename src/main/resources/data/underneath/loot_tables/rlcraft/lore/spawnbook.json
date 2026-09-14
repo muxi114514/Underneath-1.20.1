@@ -1,0 +1,115 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "spawn book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.10\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.11\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.12\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.13\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.realms_dregora.page.14\\\"}]\"\n                ],\n                title:\"The Realms of Dregora\",\n                locTitle:\"rldregora.spawnbook.realms_dregora.title\",\n                author:\"The Founder\",\n                locAuthor:\"rldregora.spawnbook.realms_dregora.author\",\n                display:{Lore:['{\"text\":\"Dregora, The Blight and you in your adventure through a bountiful world\"}']}\n              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "legendary loot book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.page.1\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"         \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"▌▌▌\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"       \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\"       ██▌███\\\"},{\\\"color\\\":\\\"blue\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rldregora.spawnbook.legendary_loot.hover\\\"}},\\\"text\\\":\\\" \\\"}]\"\n                ],\n                title:\"Book of Legendary Loot\",\n                locTitle:\"rldregora.spawnbook.legendary_loot.title\",\n                author:\"The Founder\",\n                locAuthor:\"rldregora.spawnbook.legendary_loot.author\",\n                display:{Lore:['{\"text\":\"Let there be luck to assist your in your spoils\"}']}\n              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "spawn skull",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Skull of Secrets\"}',Lore:['{\"text\":\"The answer to the secret of closed doors.\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spawn clock",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Ancient Clock\"}',Lore:['{\"text\":\"a mystical clock.\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}]}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Ancient Compass\"}',Lore:['{\"text\":\"The North star at pocket size!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bonus_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": false
+            }
+          ],
+          "weight": 0,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}

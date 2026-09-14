@@ -1,0 +1,461 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:travelers/ocean_main",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "common_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 10\"}'],LocLoreArg:[\"10\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 20\"}'],LocLoreArg:[\"20\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 50\"}'],LocLoreArg:[\"50\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 100\"}'],LocLoreArg:[\"100\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": false
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:fishing_rod_wood",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rotting Fishing Rod\"}'}}"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": false
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_block",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fern",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sea Grass\"}',Lore:['{\"text\":\"Sea Worthy Grass!\"}']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:large_fern",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sea Grass\"}',Lore:['{\"text\":\"Sea Worthy Grass!\"}']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:mossy_cobblestone",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ender_pearl",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:experience_bottle",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_shard",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Ancient Pottery\"}',Lore:['{\"text\":\"Beautifully Decorated\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fragile Pottery\"}',Lore:['{\"text\":\"Beautifully Decorated\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Old Pottery\"}',Lore:['{\"text\":\"Beautifully Decorated\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Axe\"}'}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Decaying Iron Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Crumblibg Iron Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Eroding Iron Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deteriorating Iron Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Hoe\"}'}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Decaying Iron Hoe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Crumblibg Iron Hoe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Eroding Iron Hoe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Hoe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deteriorating Iron Hoe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Crumbling Stone Axe\"}'}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Decaying Stone Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Broken Stone Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fragile Stone Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deteriorating Stone Axe\"}'}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_leather/leather_common",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_ocean_potion/ocean_potion_main",
+          "weight": 9
+        }
+      ]
+    }
+  ]
+}

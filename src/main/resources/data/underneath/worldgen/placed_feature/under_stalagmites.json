@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:under_stalagmites",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

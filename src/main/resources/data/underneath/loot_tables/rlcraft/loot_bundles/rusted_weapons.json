@@ -1,0 +1,1292 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "rlcraft potions",
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_dagger",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Dagger\"}',Lore:['{\"text\":\"Although heavily damaged the dagger appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Dagger\"}',Lore:['{\"text\":\"Although heavily damaged the dagger appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Dagger\"}',Lore:['{\"text\":\"Although heavily damaged the dagger appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Dagger\"}',Lore:['{\"text\":\"Although heavily damaged the dagger appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_longsword",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Longsword\"}',Lore:['{\"text\":\"Although heavily damaged the longsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Longsword\"}',Lore:['{\"text\":\"Although heavily damaged the longsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Longsword\"}',Lore:['{\"text\":\"Although heavily damaged the longsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Longsword\"}',Lore:['{\"text\":\"Although heavily damaged the longsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_katana",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Katana\"}',Lore:['{\"text\":\"Although heavily damaged the katana appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Katana\"}',Lore:['{\"text\":\"Although heavily damaged the katana appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Katana\"}',Lore:['{\"text\":\"Although heavily damaged the katana appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Katana\"}',Lore:['{\"text\":\"Although heavily damaged the katana appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_saber",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Saber\"}',Lore:['{\"text\":\"Although heavily damaged the saber appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Saber\"}',Lore:['{\"text\":\"Although heavily damaged the saber appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Saber\"}',Lore:['{\"text\":\"Although heavily damaged the saber appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Saber\"}',Lore:['{\"text\":\"Although heavily damaged the saber appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_rapier",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Rapier\"}',Lore:['{\"text\":\"Although heavily damaged the rapier appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Rapier\"}',Lore:['{\"text\":\"Although heavily damaged the rapier appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Rapier\"}',Lore:['{\"text\":\"Although heavily damaged the rapier appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Rapier\"}',Lore:['{\"text\":\"Although heavily damaged the rapier appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_greatsword",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Greatsword\"}',Lore:['{\"text\":\"Although heavily damaged the greatsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Greatsword\"}',Lore:['{\"text\":\"Although heavily damaged the greatsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Greatsword\"}',Lore:['{\"text\":\"Although heavily damaged the greatsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Greatsword\"}',Lore:['{\"text\":\"Although heavily damaged the greatsword appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_battle_hammer",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Hammer\"}',Lore:['{\"text\":\"Although heavily damaged the hammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Hammer\"}',Lore:['{\"text\":\"Although heavily damaged the hammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Hammer\"}',Lore:['{\"text\":\"Although heavily damaged the hammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Hammer\"}',Lore:['{\"text\":\"Although heavily damaged the hammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_warhammer",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Warhammer\"}',Lore:['{\"text\":\"Although heavily damaged the warhammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Warhammer\"}',Lore:['{\"text\":\"Although heavily damaged the warhammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Warhammer\"}',Lore:['{\"text\":\"Although heavily damaged the warhammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Warhammer\"}',Lore:['{\"text\":\"Although heavily damaged the warhammer appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_spear",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Spear\"}',Lore:['{\"text\":\"Although heavily damaged the spear appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Spear\"}',Lore:['{\"text\":\"Although heavily damaged the spear appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Spear\"}',Lore:['{\"text\":\"Although heavily damaged the spear appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Spear\"}',Lore:['{\"text\":\"Although heavily damaged the spear appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_halberd",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Halberd\"}',Lore:['{\"text\":\"Although heavily damaged the halberd appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Halberd\"}',Lore:['{\"text\":\"Although heavily damaged the halberd appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Halberd\"}',Lore:['{\"text\":\"Although heavily damaged the halberd appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Halberd\"}',Lore:['{\"text\":\"Although heavily damaged the halberd appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_pike",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Pike\"}',Lore:['{\"text\":\"Although heavily damaged the pike appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Pike\"}',Lore:['{\"text\":\"Although heavily damaged the pike appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Pike\"}',Lore:['{\"text\":\"Although heavily damaged the pike appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Pike\"}',Lore:['{\"text\":\"Although heavily damaged the pike appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_lance",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Lance\"}',Lore:['{\"text\":\"Although heavily damaged the lance appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Lance\"}',Lore:['{\"text\":\"Although heavily damaged the lance appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Lance\"}',Lore:['{\"text\":\"Although heavily damaged the lance appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Lance\"}',Lore:['{\"text\":\"Although heavily damaged the lance appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_throwing_knife",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Throwing Knife\"}',Lore:['{\"text\":\"Although heavily damaged the throwing knife appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Throwing Knife\"}',Lore:['{\"text\":\"Although heavily damaged the throwing knife appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Throwing Knife\"}',Lore:['{\"text\":\"Although heavily damaged the throwing knife appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Throwing Knife\"}',Lore:['{\"text\":\"Although heavily damaged the throwing knife appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_tomahawk",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Throwing Axe\"}',Lore:['{\"text\":\"Although heavily damaged the throwing axe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Throwing Axe\"}',Lore:['{\"text\":\"Although heavily damaged the throwing axe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Throwing Axe\"}',Lore:['{\"text\":\"Although heavily damaged the throwing axe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Throwing Axe\"}',Lore:['{\"text\":\"Although heavily damaged the throwing axe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_javelin",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Javelin\"}',Lore:['{\"text\":\"Although heavily damaged the javelin appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Javelin\"}',Lore:['{\"text\":\"Although heavily damaged the javelin appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Javelin\"}',Lore:['{\"text\":\"Although heavily damaged the javelin appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Javelin\"}',Lore:['{\"text\":\"Although heavily damaged the javelin appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_boomerang",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Boomerang\"}',Lore:['{\"text\":\"Although heavily damaged the boomerang appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Boomerang\"}',Lore:['{\"text\":\"Although heavily damaged the boomerang appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Boomerang\"}',Lore:['{\"text\":\"Although heavily damaged the boomerang appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Boomerang\"}',Lore:['{\"text\":\"Although heavily damaged the boomerang appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_battleaxe",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Battleaxe\"}',Lore:['{\"text\":\"Although heavily damaged the battleaxe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Battleaxe\"}',Lore:['{\"text\":\"Although heavily damaged the battleaxe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Battleaxe\"}',Lore:['{\"text\":\"Although heavily damaged the battleaxe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Battleaxe\"}',Lore:['{\"text\":\"Although heavily damaged the battleaxe appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_flanged_mace",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Mace\"}',Lore:['{\"text\":\"Although heavily damaged the mace appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Mace\"}',Lore:['{\"text\":\"Although heavily damaged the mace appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Mace\"}',Lore:['{\"text\":\"Although heavily damaged the mace appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Mace\"}',Lore:['{\"text\":\"Although heavily damaged the mace appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_glaive",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Glaive\"}',Lore:['{\"text\":\"Although heavily damaged the glaive appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Glaive\"}',Lore:['{\"text\":\"Although heavily damaged the glaive appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Glaive\"}',Lore:['{\"text\":\"Although heavily damaged the glaive appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Glaive\"}',Lore:['{\"text\":\"Although heavily damaged the glaive appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_quarterstaff",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rusted Iron Staff\"}',Lore:['{\"text\":\"Although heavily damaged the staff appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Oxidized Iron Staff\"}',Lore:['{\"text\":\"Although heavily damaged the staff appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Corroded Iron Staff\"}',Lore:['{\"text\":\"Although heavily damaged the staff appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tarnished Iron Staff\"}',Lore:['{\"text\":\"Although heavily damaged the staff appears useable.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

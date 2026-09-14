@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:spring_feature",
+  "config": {
+    "state": {
+      "Name": "underneath:blood"
+    },
+    "rock_count": 4,
+    "hole_count": 1,
+    "requires_block_below": true,
+    "valid_blocks": [
+      "minecraft:deepslate",
+      "minecraft:smooth_basalt",
+      "defiledlands:stone_defiled"
+    ]
+  }
+}

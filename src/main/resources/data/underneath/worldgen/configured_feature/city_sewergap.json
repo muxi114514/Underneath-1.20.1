@@ -1,0 +1,19 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "citysewergap",
+        "chance": 15
+      }
+    ],
+    "attempts": 50,
+    "anchor": "random",
+    "min_y": 50,
+    "max_y": 80,
+    "y_offset": 0,
+    "random_rotation": true,
+    "on_blocks": [],
+    "mode": "tree"
+  }
+}

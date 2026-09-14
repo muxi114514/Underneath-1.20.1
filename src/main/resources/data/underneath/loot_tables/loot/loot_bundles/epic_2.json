@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "epic Chest",
+  "pools": [
+    {
+      "name": "Epic Blacksmith Chest",
+      "rolls": {
+        "min": 5,
+        "max": 10
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/epic_tools",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:anvil",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:portal_ruins_low",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

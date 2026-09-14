@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_pirate_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Pirate Outpost\"}',Lore:['{\"text\":\"The map seems unusable apart from a set of coordinates\"}','{\"text\":\"Area Around x:-175 z:15950\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-175,z:15950}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_pirate_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"x:-175 z:15950\"}',Lore:['{\"text\":\"Resident the Corrupted, Vindicators and treasure!\"}']}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

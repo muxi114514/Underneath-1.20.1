@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Effects Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Heavens Black\"}',Lore:['{\"text\":\"\"}','{\"text\":\"§lSigned:§r Heaven, the Mighty\"}','{\"text\":\"§lType:§r Standard Supply Dregorian Vial\"}','{\"text\":\"§lBatch Number:§r Y-2078 A-F\"}','{\"text\":\"§lSerial Number:§r -unreadable-\"}','{\"text\":\"\"}','{\"text\":\"Few words inscribed on the bottom say:\"}','{\"text\":\"-In the skies, many dangers lurk-\"}']},\n                CustomPotionEffects:[{Id:22,Duration:600},{Id:12,Duration:600},{Id:11,Duration:600}],\n                CustomPotionColor:0\n              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

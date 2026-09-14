@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Gem Chests in Traders",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/rlcraft/gems",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

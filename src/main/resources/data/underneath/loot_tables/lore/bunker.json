@@ -1,0 +1,247 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "ancient",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.wastelanders_guide.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.wastelanders_guide.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.wastelanders_guide.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.wastelanders_guide.page.4\\\"}]\"\n                ],\n                title:\"The Wastelanders Guide\",\n                locTitle:\"rldregora.bunker.wastelanders_guide.title\",\n                author:\"Wastelanders Council\",\n                locAuthor:\"rldregora.bunker.wastelanders_guide.author\",\n                display:{Lore:['{\"text\":\"This book describes the task of the Wastelander within this settlement.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.evacuation_plan.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.evacuation_plan.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.evacuation_plan.page.3\\\"}]\"\n                ],\n                title:\"Evacuation Plan\",\n                locTitle:\"rldregora.bunker.evacuation_plan.title\",\n                author:\"United World\",\n                locAuthor:\"rldregora.bunker.evacuation_plan.author\",\n                display:{Lore:['{\"text\":\"These are copies of copies and preserve a ancient directive.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.the_abyss.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.the_abyss.page.2\\\"}]\"\n                ],\n                title:\"The Abyss\",\n                locTitle:\"rldregora.bunker.the_abyss.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.bunker.the_abyss.author\",\n                generation: 1,\n                display:{Lore:['{\"text\":\"This book warns for a place one should avoid at all cost.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.tutors_guide.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.tutors_guide.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.tutors_guide.page.3\\\"}]\"\n                ],\n                title:\"The Tutors Guide\",\n                locTitle:\"rldregora.bunker.tutors_guide.title\",\n                author:\"Wastelanders Council\",\n                locAuthor:\"rldregora.bunker.tutors_guide.author\",\n                display:{Lore:['{\"text\":\"This book describes the task of the tutor within this settlement.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.reclaimation_day.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.bunker.reclaimation_day.page.2\\\"}]\"\n                ],\n                title:\"Reclaimation Day\",\n                locTitle:\"rldregora.bunker.reclaimation_day.title\",\n                author:\"Unknown\",\n                locAuthor:\"\",\n                display:{Lore:['{\"text\":\"A copy of a copy of a old book, most pages fell out but a small note remained.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "ancient_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mall",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:milk_bucket",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

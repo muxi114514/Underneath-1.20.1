@@ -1,0 +1,79 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "crystalplate-1",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-2",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-3",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-4",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-5",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-6",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-7",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-8",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-9",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-10",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-11",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-12",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-13",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-14",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-15",
+        "chance": 100
+      },
+      {
+        "name": "crystalplate-16",
+        "chance": 100
+      }
+    ],
+    "attempts": 50,
+    "anchor": "random",
+    "min_y": 84,
+    "max_y": 84,
+    "y_offset": 0,
+    "random_rotation": false,
+    "on_blocks": [],
+    "mode": "tree"
+  }
+}

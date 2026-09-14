@@ -1,0 +1,115 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "gilded_bone_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/gilded_bone_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "oceanruin_big_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 5
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/gilded_tools",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/golden_tools",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "gilded_bone_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:gold_knife",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:gold_mattock",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "spartanshields:golden_basic_shield",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:coin_bronze",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

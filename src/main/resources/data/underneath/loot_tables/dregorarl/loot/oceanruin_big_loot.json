@@ -1,0 +1,136 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "oceanruin_big_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/oceanruin_big_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "oceanruin_big_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/rusted_weapons",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "oceanruin_big_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:silver_nugget",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:coin_diamond",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chain",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simple_difficulty:stone_loose_rock",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "aquaculture:neptunes_bounty",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

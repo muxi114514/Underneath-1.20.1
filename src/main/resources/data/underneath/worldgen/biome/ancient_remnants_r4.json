@@ -1,0 +1,70 @@
+{
+  "temperature": 1.2,
+  "downfall": 0.8,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 3080192,
+    "fog_color": 0,
+    "water_color": 8483608,
+    "water_fog_color": 3354121,
+    "grass_color": 3408386,
+    "foliage_color": 10878976,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    }
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "underneath:cave"
+    ]
+  },
+  "features": [
+    [
+      "underneath:replaced_blocks"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "underneath:ore_andesite",
+      "underneath:ore_deepslate_coal_ore",
+      "underneath:ore_deepslate_diamond_ore",
+      "underneath:ore_deepslate_gold_ore",
+      "underneath:ore_deepslate_iron_ore",
+      "underneath:ore_deepslate_lapis_ore",
+      "underneath:ore_deepslate_redstone_ore",
+      "underneath:ore_diorite",
+      "underneath:ore_granite",
+      "underneath:ore_gravel",
+      "underneath:ore_heart_crystal_ore",
+      "underneath:ore_orange_corundum"
+    ],
+    [],
+    [
+      "underneath:spring_blood_8_60",
+      "underneath:spring_blood_64_100",
+      "underneath:spring_blood_140_255"
+    ],
+    [
+      "underneath:ashen_rocks_floor",
+      "underneath:ashen_rocks_ceiling",
+      "underneath:portal_ruins_low"
+    ]
+  ]
+}

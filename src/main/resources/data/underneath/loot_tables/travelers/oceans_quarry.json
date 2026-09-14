@@ -1,0 +1,142 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_quarry_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Quarry\"}',Lore:['{\"text\":\"The map seems unusable apart from a set of coordinates\"}','{\"text\":\"x:-16254 z:-4887\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-16254,z:-4887}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_quarry_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"x:-16254 z:-4887\"}',Lore:['{\"text\":\"Once a brimming area full of wealth now overtaken by something else...\"}']}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_quarry_special_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "weight": 0,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Ancient Pickaxe\"}',Lore:['{\"text\":\"Inscribed in the handle it says \\'Merlin\\'s touch\\'\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:2s},{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:fortune\",lvl:3s},{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:efficiency\",lvl:5s}]}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": -10.0,
+                    "max": -15.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "Less Attack Speed",
+                  "amount": {
+                    "min": -5.0,
+                    "max": -10.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": -10.0,
+                    "max": -15.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "Less Attack Speed",
+                  "amount": {
+                    "min": -5.0,
+                    "max": -10.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

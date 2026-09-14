@@ -1,0 +1,12 @@
+Author: Bo3 BulkEdit
+Description: Converted Schematic - Modified by Bo3BulkEdit
+Version: 3
+SettingsMode: WriteDisable
+Frequency: 0
+SpawnHeight: randomY
+MinHeight: 0
+MaxHeight: 256
+CanOverride: true
+MaxPercentageOutsideSourceBlock: 100
+OutsideSourceBlock: placeAnyway
+BR(0,0,0,true,SPIKE-SET-DIAG-THIN-04_1x2,NORTH,100,0)

@@ -1,0 +1,32 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "capilarry_net_02",
+        "chance": 50
+      },
+      {
+        "name": "capilarry_net_03",
+        "chance": 50
+      },
+      {
+        "name": "capilarry_net_04",
+        "chance": 50
+      },
+      {
+        "name": "capilarry_net_05",
+        "chance": 50
+      }
+    ],
+    "attempts": 50,
+    "anchor": "floor",
+    "min_y": 60,
+    "max_y": 80,
+    "y_offset": 0,
+    "random_rotation": false,
+    "on_blocks": [
+      "epca:infested_stone"
+    ]
+  }
+}

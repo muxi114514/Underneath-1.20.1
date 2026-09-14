@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:dead_trees_tall_defiled",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

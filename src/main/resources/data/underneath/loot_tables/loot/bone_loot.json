@@ -1,0 +1,231 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "common_loot",
+      "rolls": {
+        "min": 3,
+        "max": 13
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Skull of Luck\"}',Lore:['{\"text\":\"Holding this in your off-hand gives you a boost of luck.\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 200
+        }
+      ]
+    },
+    {
+      "name": "common_loot",
+      "rolls": {
+        "min": 3,
+        "max": 13
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Helm of Resentment\"}',Lore:['{\"text\":\"This headpiece comes with a surprise\"}']}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{RepairCost:100,Unbreakable:1,HideFlags:1}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:thorns"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:projectile_protection"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:binding_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:unbreaking"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": 0.03,
+                    "max": 0.05
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "Less Health",
+                  "amount": {
+                    "min": 1.0,
+                    "max": 2.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sleeper Sword\"}',Lore:['{\"text\":\"This training sword packs more of\"}','{\"text\":\"a punch it should be able to\"}','{\"text\":\"handle\"}']}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{RepairCost:999,HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:smite\",lvl:5s},{id:\"minecraft:sharpness\",lvl:5s},{id:\"minecraft:knockback\",lvl:2s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:5s},{id:\"minecraft:vanishing_curse\",lvl:1s}]}"
+            },
+            {
+              "function": "set_damage",
+              "damage": 0.01
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": 3,
+                    "max": 6
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gray_dye",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dead_bush",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

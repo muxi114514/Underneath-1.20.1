@@ -1,0 +1,26 @@
+Author: NLBlackEagle
+Description: No description given
+Version: 3
+SettingsMode: WriteWithoutComments
+Tree: true
+Frequency: 0
+Rarity: 100.0
+RotateRandomly: false
+SpawnHeight: randomY
+SpawnHeightOffset: 0
+SpawnHeightVariance: 0
+MinHeight: 60
+MaxHeight: 80
+ExtrudeMode: None
+ExtrudeThroughBlocks: AIR
+MaxBranchDepth: 10
+ExcludedBiomes: All
+SourceBlocks: AIR
+MaxPercentageOutsideSourceBlock: 0
+OutsideSourceBlock: placeAnyway
+DoReplaceBlocks: true
+IsOTGPlus: false
+Block(0,1,0,srparasites:parasitebush)
+Block(0,2,0,srparasites:parasitebush)
+Block(0,3,0,srparasites:parasitebush)
+BlockCheck(0,0,0,srparasites:parasiterubble,srparasites:parasiterubbledense)

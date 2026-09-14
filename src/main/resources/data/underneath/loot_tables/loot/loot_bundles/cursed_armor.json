@@ -1,0 +1,2125 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Chest",
+  "pools": [
+    {
+      "name": "Cursed Tool Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Chain Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Chain Helmet of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Chain Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Chain Helmet of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:respiration\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Chain Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:aqua_affinity\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Chain Helmet of Attachment\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Chain Suit\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Chain Torso of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Chain Gear\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Chain Garb of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Chain Costume\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Chain Guard of Attachment\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Chain Chaps\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Chain Gaiters of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Chain Putts\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Chain Stockings of Isolophobia\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Chain Buskins\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Chain Throusers of Non Seclusion\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Chain Clogs\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Chain Slippers of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Chain Pumps\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Chain Sandals of Isolophobia\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Chain Hightops\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Chain Cleats of Non Seclusion\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Helmet of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Helmet of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:respiration\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:aqua_affinity\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Helmet of Attachment\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Suit\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Torso of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Gear\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Garb of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Costume\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Guard of Attachment\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Chaps\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Gaiters of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Putts\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Stockings of Isolophobia\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Buskins\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Throusers of Non Seclusion\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Diamond Clogs\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Diamond Slippers of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Diamond Pumps\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Diamond Sandals of Isolophobia\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Diamond Hightops\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Diamond Cleats of Non Seclusion\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Helmet of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Helmet of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:respiration\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Helmet\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:aqua_affinity\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Helmet of Attachment\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Suit\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Torso of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Gear\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Garb of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Costume\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Guard of Attachment\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Chaps\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Gaiters of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Putts\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Stockings of Isolophobia\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Buskins\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Throusers of Non Seclusion\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Haunted Iron Clogs\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:thorns\",lvl:4s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Wretched Iron Slippers of Binding\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Abominable Iron Pumps\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Iron Sandals of Isolophobia\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:fire_protection\",lvl:6s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Atrocious Iron Hightops\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Despicable Iron Cleats of Non Seclusion\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1s},{id:\"minecraft:projectile_protection\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:protection\",lvl:3s}],HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

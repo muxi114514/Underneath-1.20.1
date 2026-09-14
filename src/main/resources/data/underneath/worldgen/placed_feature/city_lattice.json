@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:city_lattice",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

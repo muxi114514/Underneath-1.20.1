@@ -1,0 +1,77 @@
+{
+  "temperature": 1.4,
+  "downfall": 0.0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 1122399,
+    "fog_color": 0,
+    "water_color": 8483608,
+    "water_fog_color": 3354121,
+    "grass_color": 13157803,
+    "foliage_color": 13942714,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    }
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "underneath:cave"
+    ]
+  },
+  "features": [
+    [
+      "underneath:replaced_blocks"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "underneath:ore_deepslate_coal_ore",
+      "underneath:ore_deepslate_diamond_ore",
+      "underneath:ore_deepslate_gold_ore",
+      "underneath:ore_deepslate_heart_crystal_ore",
+      "underneath:ore_deepslate_iron_ore",
+      "underneath:ore_deepslate_lapis_ore",
+      "underneath:ore_deepslate_redstone_ore",
+      "underneath:ore_infested_heavy_emerald",
+      "underneath:ore_infested_heavy_iron",
+      "underneath:ore_infested_heavy_lapis",
+      "underneath:ore_infested_heavy_redstone",
+      "underneath:ore_orange_corundum"
+    ],
+    [],
+    [
+      "underneath:spring_blood_8_60",
+      "underneath:spring_blood_64_100",
+      "underneath:spring_blood_140_255"
+    ],
+    [
+      "underneath:ashen_rocks_pillar",
+      "underneath:beckon_spawn",
+      "underneath:portal_ruins_low",
+      "underneath:city_destructor_roads",
+      "underneath:city_destructor_main",
+      "underneath:city_sewergap",
+      "underneath:city_chestfiller_top",
+      "underneath:city_chestfiller_higher",
+      "underneath:city_chestfiller_upper",
+      "underneath:city_chestfiller_lower"
+    ]
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Lingering Potion of Blind Rage\"}',Lore:['{\"text\":\"§r§9Strength V (0:30)\"}','{\"text\":\"§0☠\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+15 Attack Damage\"}']},\n                CustomPotionEffects:[{Id:15,Duration:600,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:5,Duration:600,Amplifier:4},{Id:18,Duration:600,Amplifier:3,ShowParticles:0b,ShowIcon:0b}],\n                CustomPotionColor:9839908,\n                HideFlags:32\n              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ],
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Lingering Potion of Blind Rage\"}',Lore:['{\"text\":\"§r§9Strength V (0:30)\"}','{\"text\":\"§0☹\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+15 Attack Damage\"}']},\n                CustomPotionEffects:[{Id:15,Duration:600,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:5,Duration:600,Amplifier:4},{Id:18,Duration:600,Amplifier:3,ShowParticles:0b,ShowIcon:0b}],\n                CustomPotionColor:9839908,\n                HideFlags:32\n              }"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Splash Potion of Blind Rage\"}',Lore:['{\"text\":\"§r§9Strength V (0:30)\"}','{\"text\":\"§0☠\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+15 Attack Damage\"}']},\n                CustomPotionEffects:[{Id:15,Duration:600,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:5,Duration:600,Amplifier:4},{Id:18,Duration:600,Amplifier:3,ShowParticles:0b,ShowIcon:0b}],\n                CustomPotionColor:9839908,\n                HideFlags:32\n              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ],
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Splash Potion of Blind Rage\"}',Lore:['{\"text\":\"§r§9Strength V (0:30)\"}','{\"text\":\"§0☹\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+15 Attack Damage\"}']},\n                CustomPotionEffects:[{Id:15,Duration:600,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:5,Duration:600,Amplifier:4},{Id:18,Duration:600,Amplifier:3,ShowParticles:0b,ShowIcon:0b}],\n                CustomPotionColor:9839908,\n                HideFlags:32\n              }"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Potion of Blind Rage\"}',Lore:['{\"text\":\"§r§9Strength V (0:30)\"}','{\"text\":\"§0☠\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+15 Attack Damage\"}']},\n                CustomPotionEffects:[{Id:15,Duration:600,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:5,Duration:600,Amplifier:4},{Id:18,Duration:600,Amplifier:3,ShowParticles:0b,ShowIcon:0b}],\n                CustomPotionColor:9839908,\n                HideFlags:32\n              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ],
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Potion of Blind Rage\"}',Lore:['{\"text\":\"§r§9Strength V (0:30)\"}','{\"text\":\"§0☹\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9+15 Attack Damage\"}']},\n                CustomPotionEffects:[{Id:15,Duration:600,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:5,Duration:600,Amplifier:4},{Id:18,Duration:600,Amplifier:3,ShowParticles:0b,ShowIcon:0b}],\n                CustomPotionColor:9839908,\n                HideFlags:32\n              }"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "medievalcity",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.lurking_trees.page.9\\\"}]\"\n                ],\n                title:\"Lurking below the trees.\",\n                locTitle:\"rldregora.medievalcity.lurking_trees.title\",\n                author:\"The Whisperer\",\n                locAuthor:\"rldregora.medievalcity.lurking_trees.author\",\n                display:{Lore:['{\"text\":\"A book meant to scare children from venturing too far.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.the_frontier.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.the_frontier.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.the_frontier.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.the_frontier.page.4\\\"}]\"\n                ],\n                title:\"The Frontier\",\n                locTitle:\"rldregora.medievalcity.the_frontier.title\",\n                author:\"Unknown Dregorian Origin\",\n                locAuthor:\"rldregora.medievalcity.the_frontier.author\",\n                display:{Lore:['{\"text\":\"A very old book.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.forbidden_laws.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.forbidden_laws.page.2\\\"}]\"\n                ],\n                title:\"Forbidden Book of Laws\",\n                locTitle:\"rldregora.medievalcity.forbidden_laws.title\",\n                author:\"Ancient Lawmakers\",\n                locAuthor:\"rldregora.medievalcity.forbidden_laws.author\",\n                display:{Lore:['{\"text\":\"Banned Book of Laws, with a very interesting scope.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.ancient_church.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.ancient_church.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.ancient_church.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.ancient_church.page.4\\\"}]\"\n                ],\n                title:\"Ancient Book of the Church\",\n                locTitle:\"rldregora.medievalcity.ancient_church.title\",\n                author:\"The Dregoran\",\n                locAuthor:\"rldregora.medievalcity.ancient_church.author\",\n                display:{Lore:['{\"text\":\"This Ancient book is mostly unreadable, however some can just nearly be read...\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.founders_note.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.medievalcity.founders_note.page.2\\\"}]\"\n                ],\n                title:\"Founder's Note\",\n                locTitle:\"rldregora.medievalcity.founders_note.title\",\n                author:\"Sapphiran Origin, The Sailor\",\n                locAuthor:\"rldregora.medievalcity.founders_note.author\",\n                display:{Lore:['{\"text\":\"A page from the Founders Book\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "medievalcity_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_carpet",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_chicken",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cookie",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:armor_stand",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crafting_table",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dark_oak_door",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:oak_door",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:item_frame",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:trapped_chest",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cauldron",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:writable_book",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_blue_banner",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:oak_sign",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

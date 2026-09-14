@@ -1,0 +1,166 @@
+{
+  "_comment": "Underneath：final_density=OTG 移植 otg_terrain(逐方块)。血海=default_fluid+sea_level：底部空腔(剖面 Y16-32 下空腔)在 sea_level 以下的空气自动灌 underneath:blood → 底部血湖。sea_level=33 恰盖满下空腔；想更浅调低、想漫到中层调高。上层 Y140-255 血由 spring feature 承担。",
+  "sea_level": 63,
+  "disable_mob_generation": true,
+  "aquifers_enabled": false,
+  "ore_veins_enabled": false,
+  "legacy_random_source": false,
+  "default_block": {
+    "Name": "minecraft:deepslate",
+    "Properties": { "axis": "y" }
+  },
+  "default_fluid": {
+    "Name": "underneath:blood",
+    "Properties": { "level": "0" }
+  },
+  "noise": {
+    "min_y": -64,
+    "height": 384,
+    "size_horizontal": 1,
+    "size_vertical": 2
+  },
+  "noise_router": {
+    "barrier": 0,
+    "fluid_level_floodedness": 0,
+    "fluid_level_spread": 0,
+    "lava": 0,
+    "temperature": {
+      "type": "minecraft:noise",
+      "noise": "minecraft:temperature",
+      "xz_scale": 3.0,
+      "y_scale": 0.0
+    },
+    "vegetation": {
+      "type": "minecraft:noise",
+      "noise": "minecraft:vegetation",
+      "xz_scale": 3.0,
+      "y_scale": 0.0
+    },
+    "continents": 0,
+    "erosion": 0,
+    "depth": 0,
+    "ridges": 0,
+    "initial_density_without_jaggedness": { "type": "underneath:otg_terrain" },
+    "final_density": {
+      "_comment": "OTG 地形 1:1 Java 移植（underneath:otg_terrain=OTGTerrainMath）。**不套 interpolated**：该包装层把自定义 DF 按 4×8 网格插值时会填实空腔（探针读原始函数=干净，插值后=实心，实测矛盾锁定于此）。裸函数=引擎逐方块直调=与探针同路径。逐方块 16 倍频噪声较慢但正确优先，观感确认后再优化(per-column 缓存 noiseHeight)。",
+      "type": "underneath:otg_terrain"
+    },
+    "vein_toggle": 0,
+    "vein_ridged": 0,
+    "vein_gap": 0
+  },
+  "spawn_target": [],
+  "surface_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "random_name": "underneath:bedrock_floor",
+          "true_at_and_below": { "absolute": -60 },
+          "false_at_and_above": { "absolute": -56 }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": { "Name": "minecraft:bedrock" }
+        }
+      },
+      {
+        "_comment": "floor 面：Underforest/Defiled 的草皮（.bc 中段噪声带 -0.7..0.35，÷2.75 缩放；ReplacedBlocks 语义=草土仅 Y63-150，上下换砾）",
+        "type": "minecraft:condition",
+        "if_true": { "type": "minecraft:stone_depth", "offset": 0, "surface_type": "floor", "add_surface_depth": false, "secondary_depth_range": 0 },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": { "type": "minecraft:biome", "biome_is": ["underneath:underforest"] },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": -0.255, "max_threshold": 0.127 },
+                "then_run": {
+                  "type": "minecraft:sequence",
+                  "sequence": [
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 150 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:gravel" } } },
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 63 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:grass_block", "Properties": { "snowy": "false" } } } },
+                    { "type": "minecraft:block", "result_state": { "Name": "minecraft:gravel" } }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": { "type": "minecraft:biome", "biome_is": ["underneath:defiled_caverns"] },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": -0.255, "max_threshold": 0.127 },
+                "then_run": {
+                  "type": "minecraft:sequence",
+                  "sequence": [
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 150 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "defiledlands:gravel_defiled" } } },
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 63 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "defiledlands:grass_defiled" } } },
+                    { "type": "minecraft:block", "result_state": { "Name": "defiledlands:gravel_defiled" } }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_comment": "floor+ground 数格：SurfaceAndGroundControl 噪声条带（basalt/虫染石两端带全群系相同；主系中段=deepslate 走 default 兜底）",
+        "type": "minecraft:condition",
+        "if_true": { "type": "minecraft:stone_depth", "offset": 0, "surface_type": "floor", "add_surface_depth": true, "secondary_depth_range": 0 },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            { "type": "minecraft:condition", "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": -0.62, "max_threshold": -0.255 }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "epca:infested_stone" } } },
+            { "type": "minecraft:condition", "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": 0.255, "max_threshold": 0.327 }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "epca:infested_stone" } } },
+            { "type": "minecraft:condition", "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": -10.0, "max_threshold": -0.62 }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:smooth_basalt" } } },
+            { "type": "minecraft:condition", "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": 0.127, "max_threshold": 0.255 }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:smooth_basalt" } } },
+            { "type": "minecraft:condition", "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": 0.327, "max_threshold": 0.364 }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:smooth_basalt" } } },
+            {
+              "type": "minecraft:condition",
+              "if_true": { "type": "minecraft:biome", "biome_is": ["underneath:underforest"] },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": -0.255, "max_threshold": 0.127 },
+                "then_run": {
+                  "type": "minecraft:sequence",
+                  "sequence": [
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 150 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:gravel" } } },
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 63 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:dirt" } } },
+                    { "type": "minecraft:block", "result_state": { "Name": "minecraft:gravel" } }
+                  ]
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": { "type": "minecraft:biome", "biome_is": ["underneath:defiled_caverns"] },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": { "type": "minecraft:noise_threshold", "noise": "minecraft:surface", "min_threshold": -0.255, "max_threshold": 0.127 },
+                "then_run": {
+                  "type": "minecraft:sequence",
+                  "sequence": [
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 150 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "defiledlands:gravel_defiled" } } },
+                    { "type": "minecraft:condition", "if_true": { "type": "minecraft:y_above", "anchor": { "absolute": 63 }, "surface_depth_multiplier": 0, "add_stone_depth": false }, "then_run": { "type": "minecraft:block", "result_state": { "Name": "defiledlands:dirt_defiled" } } },
+                    { "type": "minecraft:block", "result_state": { "Name": "defiledlands:gravel_defiled" } }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_comment": "Defiled Caverns 的 StoneBlock=污秽石（.bc 全群系石头，非仅表层）——兜底规则把该群系剩余全部 default_block 位置换为 stone_defiled",
+        "type": "minecraft:condition",
+        "if_true": { "type": "minecraft:biome", "biome_is": ["underneath:defiled_caverns"] },
+        "then_run": { "type": "minecraft:block", "result_state": { "Name": "defiledlands:stone_defiled" } }
+      }
+    ]
+  }
+}

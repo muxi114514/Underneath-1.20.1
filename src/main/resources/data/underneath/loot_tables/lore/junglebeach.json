@@ -1,0 +1,332 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "junglebeach",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.green_eyes.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.green_eyes.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.green_eyes.page.3\\\"}]\"\n                ],\n                title:\"Her green eyes\",\n                locTitle:\"rldregora.junglebeach.green_eyes.title\",\n                author:\"Unknown Villager\",\n                locAuthor:\"rldregora.junglebeach.green_eyes.author\",\n                display:{Lore:['{\"text\":\"A story written by a previous or current resident.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.trial_grok.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.trial_grok.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.trial_grok.page.3\\\"}]\"\n                ],\n                title:\"Trial of Grok\",\n                locTitle:\"rldregora.junglebeach.trial_grok.title\",\n                author:\"Nameless Exile\",\n                locAuthor:\"rldregora.junglebeach.trial_grok.author\",\n                display:{Lore:['{\"text\":\"A story on how one experiences the trial of Grok.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.rawr_way.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"I don't understand those idiots back in the village and I am glad they send me away.\n\nMuch better like this anyway! Now, where is my precious rawwrr fishy meat? Yum!\\\"}]\"\n                ],\n                title:\"Rawr is the way!\",\n                locTitle:\"rldregora.junglebeach.rawr_way.title\",\n                author:\"Loegi Khun\",\n                locAuthor:\"rldregora.junglebeach.rawr_way.author\",\n                display:{Lore:['{\"text\":\"This book seems to have been written by a special person...\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.book_grok.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.book_grok.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.book_grok.page.3\\\"}]\"\n                ],\n                title:\"Book of Grok\",\n                locTitle:\"rldregora.junglebeach.book_grok.title\",\n                author:\"Village Chief\",\n                locAuthor:\"rldregora.junglebeach.book_grok.author\",\n                display:{Lore:['{\"text\":\"A book to guide those who undergo the trial of Grok.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.noted_encyclopedia.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglebeach.noted_encyclopedia.page.2\\\"}]\"\n                ],\n                title:\"Noted Encyclopedia\",\n                locTitle:\"rldregora.junglebeach.noted_encyclopedia.title\",\n                author:\"Rediem Lougu\",\n                locAuthor:\"rldregora.junglebeach.noted_encyclopedia.author\",\n                display:{Lore:['{\"text\":\"A Dusty, blank book which title says Encyclopedia,\nthere\\'s also a note written on the first two pages.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "junglebeach_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:fishing_rod_wood",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:jungle_boat",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_slice",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lead",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

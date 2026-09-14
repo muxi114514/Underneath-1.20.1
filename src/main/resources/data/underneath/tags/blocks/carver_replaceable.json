@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#minecraft:overworld_carver_replaceables",
+    "minecraft:smooth_basalt",
+    {"id": "epca:infested_stone", "required": false},
+    {"id": "defiledlands:stone_defiled", "required": false},
+    {"id": "defiledlands:grass_defiled", "required": false},
+    {"id": "defiledlands:dirt_defiled", "required": false},
+    {"id": "defiledlands:gravel_defiled", "required": false}
+  ]
+}

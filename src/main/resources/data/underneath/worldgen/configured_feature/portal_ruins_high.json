@@ -1,0 +1,18 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "portal_overworld_high",
+        "chance": 35
+      }
+    ],
+    "attempts": 3,
+    "anchor": "floor",
+    "min_y": 68,
+    "max_y": 120,
+    "y_offset": 0,
+    "random_rotation": true,
+    "on_blocks": []
+  }
+}

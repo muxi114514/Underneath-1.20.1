@@ -1,0 +1,19 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "citychestfiller_top",
+        "chance": 100
+      }
+    ],
+    "attempts": 170,
+    "anchor": "random",
+    "min_y": 200,
+    "max_y": 255,
+    "y_offset": 0,
+    "random_rotation": false,
+    "on_blocks": [],
+    "mode": "tree"
+  }
+}

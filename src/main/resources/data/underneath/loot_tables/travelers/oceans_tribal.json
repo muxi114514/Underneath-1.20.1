@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_tribal_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tribal Village\"}',Lore:['{\"text\":\"The map seems unusable apart from a set of coordinates\"}','{\"text\":\"x:-2813 z:16534\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-2813,z:16534}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_tribal_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tribal Village Coordinates\"}',Lore:['{\"text\":\"x:-2690 z:17124\"}','{\"text\":\"x:-2851 z:16557\"}','{\"text\":\"x:-2065 z:16821\"}','{\"text\":\"x:-2983 z:15678\"}','{\"text\":\"x:-2309 z:15097\"}','{\"text\":\"x:-1772 z:15473\"}','{\"text\":\"x:-1054 z:14414\"}','{\"text\":\"x:-302 z:15649\"}']}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

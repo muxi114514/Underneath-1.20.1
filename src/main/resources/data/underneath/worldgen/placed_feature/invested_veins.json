@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:invested_veins",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

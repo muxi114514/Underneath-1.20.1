@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Unique Main Epic",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_epic/unique_weapons_epic",
+          "weight": 1,
+          "quality": 100
+        }
+      ]
+    }
+  ]
+}

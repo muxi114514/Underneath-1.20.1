@@ -1,0 +1,25 @@
+Author: NLBlackEagle
+Description: No description given
+Version: 3
+SettingsMode: WriteDisable
+Tree: true
+Frequency: 100
+Rarity: 100.0
+RotateRandomly: false
+SpawnHeight: randomY
+SpawnHeightOffset: 0
+SpawnHeightVariance: 0
+MinHeight: 70
+MaxHeight: 255
+ExtrudeMode: None
+ExtrudeThroughBlocks: AIR
+MaxBranchDepth: 10
+ExcludedBiomes: All
+SourceBlocks: AIR
+MaxPercentageOutsideSourceBlock: 0
+OutsideSourceBlock: placeAnyway
+DoReplaceBlocks: false
+IsOTGPlus: false
+Block(0,0,0,QUARK:MONSTER_BOX)
+BlockCheck(0,-1,0,CONCRETE:7,CONCRETE:8,STEP:8)
+LightCheck(0,0,0,0,10)

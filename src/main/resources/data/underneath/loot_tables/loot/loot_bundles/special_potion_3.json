@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Effects Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "\n              {\n                display:{Name:'{\"text\":\"Potion of Equal Trade\"}',Lore:['{\"text\":\"\"}','{\"text\":\"§lSigned:§r Haldor, the Herblorist\"}','{\"text\":\"§lType:§r Standard Supply Dregorian Vial\"}','{\"text\":\"§lBatch Number:§r Y-2078 A-F\"}','{\"text\":\"§lSerial Number:§r -unreadable-\"}']},\n                CustomPotionEffects:[{Id:17,Duration:300},{Id:10,Duration:300},{Id:5,Duration:300}],\n                CustomPotionColor:2673693\n              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

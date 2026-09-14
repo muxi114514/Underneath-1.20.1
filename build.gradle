@@ -1,0 +1,138 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '6.+'
+    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
+    id 'java'
+    id 'idea'
+}
+
+version = "${minecraft_version}-${mod_version}"
+group = project.group
+
+base.archivesName.set("${mod_name}")
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.withSourcesJar()
+
+// Mixin 插槽：当前 underneath.mixins.json 为空（无 mixin 类，不会崩）。
+// P3 移植 OTG 分支拼装器时若需微调地形/放置，再往里加类。
+mixin {
+    add sourceSets.main, "${mod_id}.refmap.json"
+    config "${mod_id}.mixins.json"
+}
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    copyIdeResources = true
+
+    if (file('src/main/resources/META-INF/accesstransformer.cfg').exists()) {
+        accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    }
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            taskName 'Client'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+        }
+
+        server {
+            workingDirectory project.file('run')
+            taskName 'Server'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+        }
+
+        // 数据生成（后续生物群系/结构 datapack 可走 datagen 产出）
+        data {
+            workingDirectory project.file('run')
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            taskName 'Data'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        }
+    }
+}
+
+// 把生成的资源并入主 source set
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    // Mixin 注解处理器（org.spongepowered:mixin:processor）来源
+    maven {
+        name = 'Sponge Snapshots'
+        url = 'https://repo.spongepowered.org/repository/maven-public/'
+    }
+    // P1 起接入方块来源 mod 时按需追加（CurseMaven / 本地 libs / 各家 maven）
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    // P0：仅原生依赖（维度走数据驱动、地形用原生噪声）。
+    // P1 起接入方块映射所需的软/硬依赖：EPCA(epca)/BetterNether/Quark/BOP/DefiledLands/
+    //     Lycanites/DynamicTrees/ScalingHealth（api 走 compileOnly、本体 runtimeOnly）。
+}
+
+// Workaround for SpongePowered/MixinGradle#38
+afterEvaluate {
+    tasks.configureReobfTaskForReobfJar.mustRunAfter(tasks.compileJava)
+}
+
+jar {
+    manifest {
+        attributes([
+            'Specification-Title'     : mod_name,
+            'Specification-Vendor'    : mod_authors,
+            'Specification-Version'   : mod_version,
+            'Implementation-Title'    : project.name,
+            'Implementation-Version'  : mod_version,
+            'Implementation-Vendor'   : mod_authors,
+            'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+            'Built-On-Java'           : "${System.getProperty('java.vm.version')} (${System.getProperty('java.vm.vendor')})",
+            'Build-On-Minecraft'      : minecraft_version
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+// 把资源和 class 合并到同一目录
+sourceSets.each {
+    def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
+    it.output.resourcesDir = dir
+    it.java.destinationDirectory = dir
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.release.set(17)
+}
+
+processResources {
+    var expandProps = [
+        minecraft_version          : minecraft_version,
+        forge_version              : forge_version,
+        forge_version_range        : forge_version_range,
+        forge_loader_version_range : forge_loader_version_range,
+        mod_id                     : mod_id,
+        mod_name                   : mod_name,
+        mod_version                : mod_version,
+        mod_authors                : mod_authors,
+        mod_description            : mod_description,
+        mod_license                : mod_license
+    ]
+    filesMatching(['pack.mcmeta', 'META-INF/mods.toml', '*.mixins.json']) {
+        expand expandProps
+    }
+    inputs.properties(expandProps)
+}
+
+// 禁止发布 Gradle module metadata
+tasks.withType(GenerateModuleMetadata) {
+    enabled = false
+}

@@ -1,0 +1,3123 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Chest",
+  "pools": [
+    {
+      "name": "Cursed Weapon Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:dragon_bone_katana",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Muramasa\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Katana...\"}','{\"text\":\"\"}','{\"text\":\"§4When in fake hand:\"}','{\"text\":\"§9+5% Attack Self\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Max Death\"}','{\"text\":\"§0Upon this item may rest the curse that grants curses...\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Ominous Blade\"}',Lore:['{\"text\":\"§kThi§rs Kat§kana§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in some hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility\"}','{\"text\":\"§0Within may reside the curse that grants curses\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Cursed Blade\"}',Lore:['{\"text\":\"Upon thi§ks Ka§tana lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Self Damage\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0Beware for by touching this thy may open Pandora\\'s box\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 2,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 6.5,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:demonic_broadsword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"§0Ancient Broadsword\"}',Lore:['{\"text\":\"Cursed be its wielder.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Speed\"}','{\"text\":\"§0+5% Death\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"§0Ancient Broadsword\"}',Lore:['{\"text\":\"Damned be its wielder.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Deathly Crash Speed\"}','{\"text\":\"§9+10% Agility\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"§0Ancient Broadsword\"}',Lore:['{\"text\":\"Death awaits its wielder.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Attack Damage\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§9+10 Fake Health\"}','{\"text\":\"§0+100% Fraud\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.6,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 10,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:frost_broadsword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"§0Broadsword of Withering Cold\"}',Lore:['{\"text\":\"Omae Wa Mou Shindeiru.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Speed\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0+100% Fraud\"}','{\"text\":\"§0aordnaP %81\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"§0Sword of Cursed Ice\"}',Lore:['{\"text\":\"There is no warmth within this sword.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Tripping Death\"}','{\"text\":\"§0arodnaP tser yam tnempiuqe thine nopU\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.7,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 7,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "defiledspartan:umbrium_halberd",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Rebuked Halberd\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Halberd...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Speed\"}','{\"text\":\"§9+5% Attack Self\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0nihtiw ediser yam aordnaP rof areweB\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Rebuked Halberd\"}',Lore:['{\"text\":\"§kThi§rs Halb§kerd§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility\"}','{\"text\":\"§0Upon this item may rest the curse that grants curses...\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Rebuked Halberd\"}',Lore:['{\"text\":\"Upon thi§ks Hal§rberd lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Eagle\\'d\"}','{\"text\":\"§9-100% Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0Within may reside the curse that grants curses\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Rebuked Halberd\"}',Lore:['{\"text\":\"A sinister aura envelops this Halberd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic\"}','{\"text\":\"§9-10% Fear\"}','{\"text\":\"§0+100% Fraud\"}','{\"text\":\"§0Beware for by touching this thy may open Pandora\\'s box\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Rebuked Halberd\"}',Lore:['{\"text\":\"A beautiful Halberd, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Damage\"}','{\"text\":\"§9+5% Good Game Resistance\"}','{\"text\":\"§9+10% Fake Looting\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Umbrium Halberd\"}',Lore:['{\"text\":\"This Halberd comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Bye Movement Speed\"}','{\"text\":\"§9+10% Fake Enemy Regeneration\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.2,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 10.5,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "defiledspartan:umbrium_spear",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Umbrium Spear\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Spear...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Bye Attack Speed\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Umbrium Spear\"}',Lore:['{\"text\":\"§kThi§rs Spe§kar§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Less Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility Counter\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Umbrium Spear\"}',Lore:['{\"text\":\"Upon thi§ks Sp§rear lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Attack Damage\"}','{\"text\":\"§9+100% Anti Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Umbrium Spear\"}',Lore:['{\"text\":\"A sinister aura envelops this Spear!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic\"}','{\"text\":\"§9-100% Capable\"}','{\"text\":\"§0aordnaP %81\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Umbrium Spear\"}',Lore:['{\"text\":\"A beautiful Spear, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Damage\"}','{\"text\":\"§9+5% Knockback Resistance\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0+100% Attack Self\"}','{\"text\":\"§0arodnaP tser yam tnempiuqe thine nopU\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Umbrium Spear\"}',Lore:['{\"text\":\"This Spear comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Speed\"}','{\"text\":\"§9+10% Regeneration\"}','{\"text\":\"§0+100% Regret\"}','{\"text\":\"§0nihtiw ediser yam aordnaP rof areweB\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.3,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 6.5,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "defiledspartan:umbrium_saber",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Umbrium Saber\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Saber...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Speed\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Fake Health\"}','{\"text\":\"§0+100% Lies\"}','{\"text\":\"§0Upon this item may rest the curse that grants curses...\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Umbrium Saber\"}',Lore:['{\"text\":\"§kThi§rs Sab§ker§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility\"}','{\"text\":\"§0+100% Don\\'t Equip!\"}','{\"text\":\"§0Within may reside the curse that grants curses\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Umbrium Saber\"}',Lore:['{\"text\":\"Upon thi§ks Sa§rber lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Attack Damage\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0+100% Nope!\"}','{\"text\":\"§0Beware for by touching this thy may open Pandora\\'s box\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Umbrium Saber\"}',Lore:['{\"text\":\"A sinister aura envelops this Saber!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic\"}','{\"text\":\"§9100% Fear §0Eagle\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Umbrium Saber\"}',Lore:['{\"text\":\"A beautiful Saber, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Damage\"}','{\"text\":\"§9+5% Knockback Resistance\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0+100% Blame Eagle\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Umbrium Saber\"}',Lore:['{\"text\":\"This Saber comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Speed\"}','{\"text\":\"§9+10% Regeneration\"}','{\"text\":\"§0+69% Check When In Main Hand Is Red!\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.6,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 4,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_halberd",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Diamond Halberd\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Halberd...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Speed\"}','{\"text\":\"§9+5% Attack Damage §0Fails\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0aordnaP %81\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Diamond Halberd\"}',Lore:['{\"text\":\"§kThi§rs Halb§kerd§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility §0Fails\"}','{\"text\":\"§0arodnaP tser yam tnempiuqe thine nopU\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Diamond Halberd\"}',Lore:['{\"text\":\"Upon thi§ks Hal§rberd lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Attack Damage §0Denial\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0nihtiw ediser yam aordnaP rof areweB\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Diamond Halberd\"}',Lore:['{\"text\":\"A sinister aura envelops this Halberd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic\"}','{\"text\":\"§9-10% Fear\"}','{\"text\":\"§0+69% Check When In Main Hand Is Red!\"}','{\"text\":\"§0Upon this item may rest the curse that grants curses...\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Diamond Halberd\"}',Lore:['{\"text\":\"A beautiful Halberd, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Damage\"}','{\"text\":\"§9+5% Knockback §0On Your Head!\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0Within may reside the curse that grants curses\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Diamond Halberd\"}',Lore:['{\"text\":\"This Halberd comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Speed\"}','{\"text\":\"§9+10% Regeneration §0Troll\"}','{\"text\":\"§9+100% Eagle Thinks This Is Fun!\"}','{\"text\":\"§0Beware for by touching this thy may open Pandora\\'s box\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.2,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 12,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_glaive",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Diamond Glaive\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Glaive...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Speed\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Max Health §0Troll\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Diamond Glaive\"}',Lore:['{\"text\":\"§kThi§rs Glai§kve§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Fake Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility\"}','{\"text\":\"§0No way to Un-Curse this!\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Diamond Glaive\"}',Lore:['{\"text\":\"Upon thi§ks Glai§rve lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Attack Damage\"}','{\"text\":\"§9+100% Lucky §0Lies\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Diamond Glaive\"}',Lore:['{\"text\":\"A sinister aura envelops this Glaive!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic §0Lies!\"}','{\"text\":\"§9-10% Fear\"}','{\"text\":\"§0aordnaP %81\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Diamond Glaive\"}',Lore:['{\"text\":\"A beautiful Glaive, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Damage\"}','{\"text\":\"§9+5% Knockballs Resistance §0I Would Not Test This...\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0arodnaP tser yam tnempiuqe thine nopU\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Diamond Glaive\"}',Lore:['{\"text\":\"This Glaive comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Speed\"}','{\"text\":\"§9+10% Regeneration §0To Full Health After You Die!\"}','{\"text\":\"§0nihtiw ediser yam aordnaP rof areweB\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 11,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:desert_myrmex_stinger_rapier",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Desert Stinger Rapier\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Rapier...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Yourself!\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0Upon this item may rest the curse that grants curses...\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Desert Stinger Rapier\"}',Lore:['{\"text\":\"§kThi§rs Rapie§kr§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility §0Fails\"}','{\"text\":\"§0Within may reside the curse that grants curses\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Desert Stinger Rapier\"}',Lore:['{\"text\":\"Upon thi§ks Rap§rier lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Attack Damage §0Fails\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0Beware for by touching this thy may open Pandora\\'s box\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Desert Stinger Rapier\"}',Lore:['{\"text\":\"A sinister aura envelops this Rapier!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic §0Rickroll\"}','{\"text\":\"§9-10% Fear §0This Weapon!\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Desert Stinger Rapier\"}',Lore:['{\"text\":\"A beautiful Rapier, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Damage\"}','{\"text\":\"§9+5% Knockballs 3000!\"}','{\"text\":\"§9+10% Looting §0Lies\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Desert Stinger Rapier\"}',Lore:['{\"text\":\"This Rapier comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Speed §0Towards Death!\"}','{\"text\":\"§9+10% Regeneration\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 2.4,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 2,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:jungle_myrmex_stinger_greatsword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Jungle Stinger Greatsword\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Greatsword...\"}','{\"text\":\"\"}','{\"text\":\"§4When in fake hand:\"}','{\"text\":\"§9+5% Anti Speed\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Less Health\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Jungle Stinger Greatsword\"}',Lore:['{\"text\":\"§kThi§rs Greatsw§kord§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Health\"}','{\"text\":\"§9+5% Fly Speed §0You Fools!\"}','{\"text\":\"§9+10% Agility\"}','{\"text\":\"§0It\\'s Fake!\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Jungle Stinger Greatsword\"}',Lore:['{\"text\":\"Upon thi§ks Great§rsword lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Attack Damage\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§0+100% Emotional Damage\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Jungle Stinger Greatsword\"}',Lore:['{\"text\":\"A sinister aura envelops this Greatsword!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic\"}','{\"text\":\"§9-10% Fear §0The Eagle And His Stunts!\"}','{\"text\":\"§0aordnaP %81\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Jungle Stinger Greatsword\"}',Lore:['{\"text\":\"A beautiful Greatsword, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Damage\"}','{\"text\":\"§9+5% Knockballs Buff\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0arodnaP tser yam tnempiuqe thine nopU\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Jungle Stinger Greatsword\"}',Lore:['{\"text\":\"This Greatsword comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Debuff\"}','{\"text\":\"§9+10% Regeneration\"}','{\"text\":\"§0Eagle Troll!\"}','{\"text\":\"§0nihtiw ediser yam aordnaP rof areweB\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.2,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 6,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:myrmex_desert_sword_venom",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Stinger Sword\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§ris Sword...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Attack Speed\"}','{\"text\":\"§9+5% No Attack Damage\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Stinger Sword\"}',Lore:['{\"text\":\"§kThi§rs Swo§krd§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Max Death\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Agility\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Stinger Sword\"}',Lore:['{\"text\":\"Upon thi§ks S§rword lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Negative Yes.\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Stinger Sword\"}',Lore:['{\"text\":\"A sinister aura envelops this Sword!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility\"}','{\"text\":\"§9+5 Magic\"}','{\"text\":\"§91000% Sus\"}','{\"text\":\"§0aordnaP %81\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Stinger Sword\"}',Lore:['{\"text\":\"A beautiful Sword, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Sussyberian Heritage\"}','{\"text\":\"§9+5% Knockback Resistance\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0arodnaP tser yam tnempiuqe thine nopU\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Stinger Sword\"}',Lore:['{\"text\":\"This Sword comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Mentalberian Herritage\"}','{\"text\":\"§9+10% Regeneration\"}','{\"text\":\"§0nihtiw ediser yam aordnaP rof areweB\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 1.6,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 5,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:desert_myrmex_stinger_quarterstaff",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Quarterstaff\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Quarterstaff...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Return To Mentalberian When Lost\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Max Health\"}','{\"text\":\"§0Upon this item may rest the curse that grants curses...\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Quarterstaff\"}',Lore:['{\"text\":\"§kThi§rs Quartersta§kff§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Min Health\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Jump Scare\"}','{\"text\":\"§0Within may reside the curse that grants curses\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Quarterstaff\"}',Lore:['{\"text\":\"Upon thi§ks Quarters§rtaff lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Shivaxi\\'d\"}','{\"text\":\"§9+100% Heaven\\'d\"}','{\"text\":\"§9+100% Eagle\\'d\"}','{\"text\":\"§0Beware for by touching this thy may open Pandora\\'s box\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Quarterstaff\"}',Lore:['{\"text\":\"A sinister aura envelops this Quarterstaff!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Agility Fails\"}','{\"text\":\"§9+5 Magic Gone!\"}','{\"text\":\"§9-10% Fear\"}','{\"text\":\"§0aordnaP evah dluoC\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Quarterstaff\"}',Lore:['{\"text\":\"A beautiful Quarterstaff, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Attack Fails\"}','{\"text\":\"§9+5% Knockback Resistance\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0nihtiw tser yam aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Quarterstaff\"}',Lore:['{\"text\":\"This Quarterstaff comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Slowed\"}','{\"text\":\"§9+10% Degeneration\"}','{\"text\":\"§0uoy steerg aordnaP\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 2,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 6,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_rapier",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Possessed Rapier\"}',Lore:['{\"text\":\"The§kre is§r a presence insi§kde th§re Rapier...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+5% Kotlin Language\"}','{\"text\":\"§9+5% Attack Damage\"}','{\"text\":\"§9+10% Eagle Scripted\"}','{\"text\":\"§0aordnaP %81\"}']},HideFlags:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Rapier\"}',Lore:['{\"text\":\"§kThi§rs Rapi§ker§r will §kbe y§rou§kr en§rd!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+3 Untested Script\"}','{\"text\":\"§9+5% Fly Speed\"}','{\"text\":\"§9+10% Corrupted\"}','{\"text\":\"§0arodnaP tser yam tnempiuqe thine nopU\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Rapier\"}',Lore:['{\"text\":\"Upon thi§ks R§rapier lies a §khe§ravy curs§ke...\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+100% Failed Damage\"}','{\"text\":\"§9+100% Luck\"}','{\"text\":\"§9+100% Attack Speed\"}','{\"text\":\"§0nihtiw ediser yam aordnaP rof areweB\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Deplored Rapier\"}',Lore:['{\"text\":\"A sinister aura envelops this Rapier!\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Failed Agility\"}','{\"text\":\"§9+5 Magic\"}','{\"text\":\"§9-10% Anti Fear\"}','{\"text\":\"§0Upon this item may rest the curse that grants curses...\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reviled Rapier\"}',Lore:['{\"text\":\"A beautiful Rapier, engraved with malicious intent.\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Cursed\"}','{\"text\":\"§9+5% Knockback Resistance\"}','{\"text\":\"§9+10% Looting\"}','{\"text\":\"§0Within may reside the curse that grants curses\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Rebuked Rapier\"}',Lore:['{\"text\":\"This Rapier comes with a twist\"}','{\"text\":\"\"}','{\"text\":\"§4When in main hand:\"}','{\"text\":\"§9+1 Luck\"}','{\"text\":\"§9+5% Movement Speed\"}','{\"text\":\"§9+10% Degeneration\"}','{\"text\":\"§0Beware for by touching this thy may open Pandora\\'s box\"}']},HideFlags:3}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:curse_of_possession"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse",
+                "minecraft:binding_curse",
+                "charm:haunting_curse",
+                "charm:rusting_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "minecraft:binding_curse",
+                "jlme:vulnerability"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "bettersurvival:heavy",
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": 2.4,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": 2.5,
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -10,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.2,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.05,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

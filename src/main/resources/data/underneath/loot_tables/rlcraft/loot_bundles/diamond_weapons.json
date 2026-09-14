@@ -1,0 +1,396 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "rlcraft potions",
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_rapier",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_greatsword",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_battle_hammer",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_warhammer",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_spear",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_halberd",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_pike",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_lance",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_longbow",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_heavy_crossbow",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_throwing_knife",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_tomahawk",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_javelin",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_boomerang",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_battleaxe",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_flanged_mace",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 35,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

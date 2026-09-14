@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Curse break with hidden slowness, bad luck, invisibility, glowing, mining fatigue and all other negative stuff",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "\n              {\n                Potion:\"minecraft:strong_regeneration\",\n                display:{Name:'{\"text\":\"Potion of Curse Break\"}',Lore:['{\"text\":\"§9Curse Break\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9Sardonic +1\"}','{\"text\":\"§0☠\"}']},\n                CustomPotionEffects:[{Id:27,Duration:600,Amplifier:9},{Id:15,Duration:600,Amplifier:9},{Id:24,Duration:600,Amplifier:9},{Id:17,Duration:600,Amplifier:9},{Id:7,Duration:600},{Id:14,Duration:600},{Id:4,Duration:600,Amplifier:9},{Id:9,Duration:600,Amplifier:9},{Id:19,Duration:600,Amplifier:9},{Id:11,Duration:0},{Id:2,Duration:600,Amplifier:4},{Id:18,Duration:1200,Amplifier:9}],\n                HideFlags:32\n              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ],
+              "tag": "\n              {\n                Potion:\"minecraft:strong_regeneration\",\n                display:{Name:'{\"text\":\"Potion of Curse Break\"}',Lore:['{\"text\":\"§9Curse Break\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9Sardonic +1\"}','{\"text\":\"§0☹\"}']},\n                CustomPotionEffects:[{Id:27,Duration:600,Amplifier:9},{Id:15,Duration:600,Amplifier:9},{Id:24,Duration:600,Amplifier:9},{Id:17,Duration:600,Amplifier:9},{Id:7,Duration:600},{Id:14,Duration:600},{Id:4,Duration:600,Amplifier:9},{Id:9,Duration:600,Amplifier:9},{Id:19,Duration:600,Amplifier:9},{Id:11,Duration:0},{Id:2,Duration:600,Amplifier:4},{Id:18,Duration:1200,Amplifier:9}],\n                HideFlags:32\n              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

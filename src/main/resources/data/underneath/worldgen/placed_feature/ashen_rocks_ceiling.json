@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:ashen_rocks_ceiling",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

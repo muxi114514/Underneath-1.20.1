@@ -1,0 +1,284 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "junglelore",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.tai_bwo_bwarg.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.tai_bwo_bwarg.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.tai_bwo_bwarg.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.tai_bwo_bwarg.page.4\\\"}]\"\n                ],\n                title:\"Tai Bwo Bwarg - A Simple Village\",\n                locTitle:\"rldregora.junglelore.tai_bwo_bwarg.title\",\n                author:\"Emor, the Explorer\",\n                locAuthor:\"rldregora.junglelore.tai_bwo_bwarg.author\",\n                display:{Lore:['{\"text\":\"An Explorer\\'s Note\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.under_trees.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.under_trees.page.2\\\"}]\"\n                ],\n                title:\"Under the Mighty Trees\",\n                locTitle:\"rldregora.junglelore.under_trees.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.junglelore.under_trees.author\",\n                display:{Lore:['{\"text\":\"A note of exploration.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.eyes_kun_drak.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.eyes_kun_drak.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.eyes_kun_drak.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.eyes_kun_drak.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.eyes_kun_drak.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.eyes_kun_drak.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.eyes_kun_drak.page.7\\\"}]\"\n                ],\n                title:\"Eyes at the Kun Drak\",\n                locTitle:\"rldregora.junglelore.eyes_kun_drak.title\",\n                author:\"Jukoi\",\n                locAuthor:\"rldregora.junglelore.eyes_kun_drak.author\",\n                display:{Lore:['{\"text\":\"A hunter\\'s story about an encounter at the dungeons.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.10\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.11\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.12\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.13\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.14\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.15\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.16\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.17\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.18\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.19\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.demons_shadows.page.20\\\"}]\"\n                ],\n                title:\"Demons in the Shadows\",\n                locTitle:\"rldregora.junglelore.demons_shadows.title\",\n                author:\"Urm\",\n                locAuthor:\"rldregora.junglelore.demons_shadows.author\",\n                display:{Lore:['{\"text\":\"The Written Trials of Urm, The Chieftain\\'s Son.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.travelers_mission.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.travelers_mission.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.travelers_mission.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.travelers_mission.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.travelers_mission.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.junglelore.travelers_mission.page.6\\\"}]\"\n                ],\n                title:\"The Traveler's Mission\",\n                locTitle:\"rldregora.junglelore.travelers_mission.title\",\n                author:\"Kun Dosa\",\n                locAuthor:\"rldregora.junglelore.travelers_mission.author\",\n                display:{Lore:['{\"text\":\"An encounter with the Traveler.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "junglelore_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:salmon",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_hoe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:black_terracotta",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:oak_boat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ladder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sunflower",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hay_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:vine",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_pane",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:black_glazed_terracotta",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:green_glazed_terracotta",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

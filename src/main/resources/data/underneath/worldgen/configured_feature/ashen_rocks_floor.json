@@ -1,0 +1,19 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "ashen_rock_floor",
+        "chance": 100
+      }
+    ],
+    "attempts": 0,
+    "anchor": "random",
+    "min_y": 0,
+    "max_y": 10,
+    "y_offset": 0,
+    "random_rotation": true,
+    "on_blocks": [],
+    "mode": "custom_object"
+  }
+}

@@ -1,0 +1,41 @@
+Author: NLBlackEagle
+Description: No description given
+SettingsMode: WriteDisable
+Frequency: 0
+SpawnHeight: randomY
+UseCenterForHighestBlock: true
+MinHeight: 50
+MaxHeight: 50
+InheritBO3: 
+InheritBO3Rotation: NORTH
+OverrideChildSettings: true
+OverrideParentHeight: false
+CanOverride: true
+BranchFrequency: 0
+BranchFrequencyGroup: 
+MustBeBelowOther: false
+MustBeInside: 
+CannotBeInside: 
+MustBeInsideWorldBorders: false
+CanSpawnOnWater: true
+SpawnOnWaterOnly: false
+SpawnUnderWater: true
+SpawnAtWaterLevel: false
+HeightOffset: 0
+RemoveAir: false
+ReplaceAbove: 
+ReplaceBelow: 
+ReplaceWithBiomeBlocks: true
+ReplaceWithSurfaceBlock: GRASS
+ReplaceWithGroundBlock: DIRT
+ReplaceWithStoneBlock: eaglemixins:deepslate
+SmoothRadius: 0
+SmoothHeightOffset: 0
+SmoothStartTop: false
+SmoothStartWood: false
+SmoothingSurfaceBlock: 
+SmoothingGroundBlock: 
+BO3Group:
+IsSpawnPoint: false
+DoReplaceBlocks: true
+Branch(0,-4,0,true,L4-M-Cross,NORTH,100.0,0)

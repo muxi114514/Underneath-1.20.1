@@ -1,0 +1,157 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "food_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/food_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "food_loot",
+      "rolls": {
+        "min": 1,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:hanging_roots",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "quark:crab_leg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "quark:cooked_crab_leg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:suspicious_stew",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sweet_berries",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "vinery:red_grape",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sweet_berries",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:bacon",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:fried_egg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:carrot_seed_soup",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:compressed_flesh",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:chocolate_bar",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:spider_soup",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:cactus_fruit",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:horse_meat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:bat_wing",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:parrot_meat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:polar_bear_meat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:beetroot_noodles",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:jelly",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

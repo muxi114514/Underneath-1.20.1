@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "underneath:block/reinforced_concrete"
+    }
+  }
+}

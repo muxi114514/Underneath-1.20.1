@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:beckon_spawn",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

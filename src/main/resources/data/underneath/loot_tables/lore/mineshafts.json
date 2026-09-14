@@ -1,0 +1,367 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "mineshafts",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.stronghold.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.stronghold.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.stronghold.page.3\\\"}]\"\n                ],\n                title:\"The Stronghold\",\n                locTitle:\"rldregora.mineshafts.stronghold.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.mineshafts.stronghold.author\",\n                display:{Lore:['{\"text\":\"Ancient structures, deep underground.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.mineral_deposits.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.mineral_deposits.page.2\\\"}]\"\n                ],\n                title:\"Mineral Deposits\",\n                locTitle:\"rldregora.mineshafts.mineral_deposits.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.mineshafts.mineral_deposits.author\",\n                display:{Lore:['{\"text\":\"Useful information regarding mineral deposits.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.bones_beasts.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.bones_beasts.page.2\\\"}]\"\n                ],\n                title:\"Bones & Beasts\",\n                locTitle:\"rldregora.mineshafts.bones_beasts.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.mineshafts.bones_beasts.author\",\n                display:{Lore:['{\"text\":\"A not so ancient discovery in the mines\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.encounters_mines.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.encounters_mines.page.2\\\"}]\"\n                ],\n                title:\"Encounters in the Mines\",\n                locTitle:\"rldregora.mineshafts.encounters_mines.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.mineshafts.encounters_mines.author\",\n                display:{Lore:['{\"text\":\"Rumors, or truth?\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.trapped.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.trapped.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.trapped.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.trapped.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.mineshafts.trapped.page.5\\\"}]\"\n                ],\n                title:\"Trapped\",\n                locTitle:\"rldregora.mineshafts.trapped.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.mineshafts.trapped.author\",\n                display:{Lore:['{\"text\":\"The Demise of a John Doe.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "mineshafts_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:minecart",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest_minecart",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hopper_minecart",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_carrot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_ore",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_ore",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

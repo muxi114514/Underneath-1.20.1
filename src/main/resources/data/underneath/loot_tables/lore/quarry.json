@@ -1,0 +1,427 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "quarry_1",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.prospector.page.1\\\"}]\"\n                ],\n                title:\"The Prospector\",\n                locTitle:\"rldregora.quarry.prospector.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.quarry.prospector.author\",\n                display:{Lore:['{\"text\":\"Black Trees is where the Black Gold awaits.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.sinkhole.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.sinkhole.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.sinkhole.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.sinkhole.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.sinkhole.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.sinkhole.page.6\\\"}]\"\n                ],\n                title:\"Sinkhole\",\n                locTitle:\"rldregora.quarry.sinkhole.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.quarry.sinkhole.author\",\n                display:{Lore:['{\"text\":\"A world beneath?\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.pandoras_key.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.pandoras_key.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.pandoras_key.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.pandoras_key.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.pandoras_key.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.pandoras_key.page.6\\\"}]\"\n                ],\n                title:\"Pandora's Key\",\n                locTitle:\"rldregora.quarry.pandoras_key.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.quarry.pandoras_key.author\",\n                display:{Lore:['{\"text\":\"The second Traveler.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.beware_earthquakes.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.beware_earthquakes.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.beware_earthquakes.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.beware_earthquakes.page.4\\\"}]\"\n                ],\n                title:\"Beware of Earthquakes\",\n                locTitle:\"rldregora.quarry.beware_earthquakes.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.quarry.beware_earthquakes.author\",\n                display:{Lore:['{\"text\":\"From above...\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.10\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.11\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.quarry.productivity_report.page.12\\\"}]\"\n                ],\n                title:\"Productivity Report\",\n                locTitle:\"rldregora.quarry.productivity_report.title\",\n                author:\"Quarry Headmaster\",\n                locAuthor:\"rldregora.quarry.productivity_report.author\",\n                display:{Lore:['{\"text\":\"A productivity report written by a quarry headmaster.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "quarry_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobblestone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    }
+  ]
+}

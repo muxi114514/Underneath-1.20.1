@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "betternether" }
+  ],
+  "ingredients": [
+    { "item": "minecraft:echo_shard" },
+    { "item": "betternether:cincinnasite" }
+  ],
+  "result": {
+    "item": "underneath:blood_flint_and_steel"
+  }
+}

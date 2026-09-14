@@ -1,0 +1,597 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Chest",
+  "pools": [
+    {
+      "name": "Cursed Weapon Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Jinxed Stone Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Stone Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Stone Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Jinxed Iron Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Iron Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Iron Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Jinxed Diamond Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:smite\",lvl:8s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Accursed Diamond Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:looting\",lvl:3s},{id:\"minecraft:sweeping\",lvl:6s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damned Diamond Sword\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:fire_aspect\",lvl:1s},{id:\"minecraft:knockback\",lvl:5s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Doomed Bow\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:flame\",lvl:1s},{id:\"minecraft:infinity\",lvl:1s}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Twisted Bow\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:power\",lvl:6s},{id:\"minecraft:punch\",lvl:2s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cursed Bow\"}'},Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1s},{id:\"minecraft:bane_of_arthropods\",lvl:1s},{id:\"minecraft:punch\",lvl:8s},{id:\"minecraft:infinity\",lvl:1s}],HideFlags:2}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -5,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": -0.5,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

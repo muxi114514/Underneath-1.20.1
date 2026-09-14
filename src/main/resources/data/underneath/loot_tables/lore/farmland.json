@@ -1,0 +1,491 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "farmland",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.staring_eyes.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.staring_eyes.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.staring_eyes.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.staring_eyes.page.4\\\"}]\"\n                ],\n                title:\"Staring Eyes\",\n                locTitle:\"rldregora.farmland.staring_eyes.title\",\n                author:\"An unknown farmer.\",\n                locAuthor:\"rldregora.farmland.staring_eyes.author\",\n                display:{Lore:['{\"text\":\"An encounter with the corrupted.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.encounter_farm.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.encounter_farm.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.encounter_farm.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.encounter_farm.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.encounter_farm.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.encounter_farm.page.6\\\"}]\"\n                ],\n                title:\"Encounter on the Farm\",\n                locTitle:\"rldregora.farmland.encounter_farm.title\",\n                author:\"An unknown farmer.\",\n                locAuthor:\"rldregora.farmland.encounter_farm.author\",\n                display:{Lore:['{\"text\":\"Times are changing, as proven by this note.\"}','{\"text\":\"Who knows how long ago this was and\"}','{\"text\":\"where the corrupted stand now.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.lumious_sword.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.lumious_sword.page.2\\\"}]\"\n                ],\n                title:\"A Lumious Sword\",\n                locTitle:\"rldregora.farmland.lumious_sword.title\",\n                author:\"An unknown farmer.\",\n                locAuthor:\"rldregora.farmland.lumious_sword.author\",\n                display:{Lore:['{\"text\":\"A rare find.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_traveler.page.10\\\"}]\"\n                ],\n                title:\"The Traveler\",\n                locTitle:\"rldregora.farmland.the_traveler.title\",\n                author:\"Duke the Farmer\",\n                locAuthor:\"rldregora.farmland.the_traveler.author\",\n                display:{Lore:['{\"text\":\"Another encounter with the mysterious traveler.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.farmland.the_book.page.1\\\"}]\"\n                ],\n                title:\"The Book\",\n                locTitle:\"rldregora.farmland.the_book.title\",\n                author:\"The Traveler\",\n                locAuthor:\"rldregora.farmland.the_book.author\",\n                display:{Lore:['{\"text\":\"A weird, empty book... except...\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "farmland_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:thick\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_hoe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_hoe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.5,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cake",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chicken",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_beef",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:white_wool",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_pie",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:oak_sapling",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sugar_cane",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:baked_potato",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit_stew",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat_seeds",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cookie",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lead",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot_soup",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Author: NLBlackEagle
+Description: No description given
+Version: 3
+SettingsMode: WriteWithoutComments
+Tree: false
+Frequency: 2
+Rarity: 80.0
+RotateRandomly: false
+SpawnHeight: randomY
+SpawnHeightOffset: 0
+SpawnHeightVariance: 0
+MinHeight: 63
+MaxHeight: 70
+ExtrudeMode: None
+ExtrudeThroughBlocks: AIR
+MaxBranchDepth: 10
+ExcludedBiomes: All
+SourceBlocks: AIR
+MaxPercentageOutsideSourceBlock: 0
+OutsideSourceBlock: placeAnyway
+DoReplaceBlocks: true
+IsOTGPlus: false
+BlockCheck(0,0,0,Solid)
+Entity(0,1,0,srparasites:rupter,1)

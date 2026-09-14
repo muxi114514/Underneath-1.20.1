@@ -1,0 +1,80 @@
+{
+  "type": "underneath:underneath",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "underneath:underneath",
+    "biome_source": {
+      "_comment": "OTG BiomeMode:FromImage 移植：map.png 1像素=4x4格(quart)，偏移-1500(即覆盖 ±6000 格中央区，主要绘制远古遗迹群)；图外/未知色→fallback multi_noise=OTG Normal 模式的近似。颜色表来自各 .bc BiomeColor（六核心群系共用 #686297→归 underneath，花色分布交给 fallback）。",
+      "type": "underneath:from_image",
+      "x_offset": -1500,
+      "z_offset": -1500,
+      "entries": [
+        { "color": "#686297", "biome": "underneath:underneath" },
+        { "color": "#241c73", "biome": "underneath:underneath_edge" },
+        { "color": "#19153d", "biome": "underneath:underneath_pillar" },
+        { "color": "#0b010b", "biome": "underneath:ancient_remnants" },
+        { "color": "#0d030d", "biome": "underneath:ancient_remnants_r1" },
+        { "color": "#1d071d", "biome": "underneath:ancient_remnants_r2" },
+        { "color": "#2f0b2f", "biome": "underneath:ancient_remnants_r3" },
+        { "color": "#491348", "biome": "underneath:ancient_remnants_r4" },
+        { "color": "#6a1f69", "biome": "underneath:ancient_remnants_r5" },
+        { "color": "#cfabcf", "biome": "underneath:remnants_edge" },
+        { "color": "#ff3c00", "biome": "underneath:remnants_wall" },
+        { "color": "#641500", "biome": "underneath:remnants_outer_edge" }
+      ],
+      "fallback": {
+        "type": "minecraft:multi_noise",
+        "biomes": [
+          {
+            "biome": "underneath:underneath",
+            "parameters": { "temperature": [-0.45, 0.45], "humidity": [-0.45, 0.45], "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:corrupted",
+            "parameters": { "temperature": -0.8, "humidity": -0.6, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:underspikes",
+            "parameters": { "temperature": 0.8, "humidity": -0.6, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:underforest",
+            "parameters": { "temperature": 0.6, "humidity": 0.8, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:defiled_caverns",
+            "parameters": { "temperature": -0.6, "humidity": 0.8, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:underneath_edge",
+            "parameters": { "temperature": 0.0, "humidity": -0.9, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:underneath_hole",
+            "parameters": { "temperature": 0.0, "humidity": 0.9, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:underneath_pillar",
+            "parameters": { "temperature": 0.9, "humidity": 0.0, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:corrupted_edge",
+            "parameters": { "temperature": -0.9, "humidity": -0.15, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:corrupted_pillar",
+            "parameters": { "temperature": -0.9, "humidity": 0.35, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:underspikes_edge",
+            "parameters": { "temperature": 0.9, "humidity": -0.45, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          },
+          {
+            "biome": "underneath:underspikes_pillar",
+            "parameters": { "temperature": 0.9, "humidity": 0.6, "continentalness": 0.0, "erosion": 0.0, "weirdness": 0.0, "depth": 0.0, "offset": 0.0 }
+          }
+        ]
+      }
+    }
+  }
+}

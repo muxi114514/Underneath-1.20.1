@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "underneath:block/porous_flesh" },
+      { "model": "underneath:block/porous_flesh", "y": 90 },
+      { "model": "underneath:block/porous_flesh", "y": 180 },
+      { "model": "underneath:block/porous_flesh", "y": 270 }
+    ]
+  }
+}

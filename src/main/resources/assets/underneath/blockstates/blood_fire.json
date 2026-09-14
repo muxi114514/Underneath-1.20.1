@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      { "model": "underneath:block/blood_fire_floor0" },
+      { "model": "underneath:block/blood_fire_floor1" }
+    ]
+  }
+}

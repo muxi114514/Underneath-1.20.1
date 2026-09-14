@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Unique armor for in rare chests",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_rare/unique_weapons_rare",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

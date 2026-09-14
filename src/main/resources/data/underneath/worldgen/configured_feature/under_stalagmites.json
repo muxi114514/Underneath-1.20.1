@@ -1,0 +1,30 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "under_stalagmite_01",
+        "chance": 50
+      },
+      {
+        "name": "under_stalagmite_02",
+        "chance": 50
+      },
+      {
+        "name": "under_stalagmite_03",
+        "chance": 100
+      },
+      {
+        "name": "basalt_speleothem",
+        "chance": 50
+      }
+    ],
+    "attempts": 50,
+    "anchor": "floor",
+    "min_y": 63,
+    "max_y": 73,
+    "y_offset": 0,
+    "random_rotation": true,
+    "on_blocks": []
+  }
+}

@@ -1,0 +1,1136 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "rare Chest",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/desert_pyramid",
+          "weight": 6
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/simple_dungeon",
+          "weight": 6
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/end_city_treasure",
+          "weight": 3
+        },
+        {
+          "type": "loot_table",
+          "name": "minecraft:chests/stronghold_library",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_rare/unique_main_rare",
+          "weight": 2
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_moderncity/rare_old_tools",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_moderncity/rare_old_arrows",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/diamond_weapons",
+          "weight": 5
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/loot_bundles/silver_tools",
+          "weight": 5
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/rare_tools",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/loot_bundles/rare_potions",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "name": "rare Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "name": "common_loot",
+      "rolls": {
+        "min": 6,
+        "max": 12
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:firework_rocket",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Damaged Fireworks\"}',Lore:['{\"text\":\"Yeah... setting these of may be risky.\"}']}}"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Brick\"}',Lore:['{\"text\":\"It is a Brick, what did you expect?\"}']}}"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cracked Vial\"}',Lore:['{\"text\":\"There may be one use left for this vial.\"}']}}"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:water_bucket",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Moldy Bucket\"}',Lore:['{\"text\":\"Looking into the bucket you are taken over with disgust.\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Infested Bucket\"}',Lore:['{\"text\":\"There\\'s Spiders crawling inside...\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Smelly Bucket\"}',Lore:['{\"text\":\"This bucket smells terrible...\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Dirty Bucket\"}',Lore:['{\"text\":\"You rather not know the previous contents...\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 10\"}'],LocLoreArg:[\"10\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 20\"}'],LocLoreArg:[\"20\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 50\"}'],LocLoreArg:[\"50\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Golden Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 100\"}'],LocLoreArg:[\"100\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Iron Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 10\"}'],LocLoreArg:[\"10\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Iron Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 20\"}'],LocLoreArg:[\"20\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Iron Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 50\"}'],LocLoreArg:[\"50\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Small Iron Disk\"}',Lore:['{\"text\":\"There\\'s a number written on the small disk, it says 100\"}'],LocLoreArg:[\"100\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bookshelf",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Dusty Bookshelf\"}',Lore:['{\"text\":\"This bookshelf is extremely old.\"}']}}"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Dusty Emerald\"}',Lore:['{\"text\":\"Evident by the damage this gem must be old.\"}']}}"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Slow Cook Recipes with -yyon-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-yyon-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Joy of Cooking with -XzeroAir-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-XzeroAir-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tasting History with -Meldexun-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Meldexun-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"-Snownee\\'s- Cookbook\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Snownee-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Competent Cuisine with -Lycanite-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Lycanite-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tasty Table -Star Artsy-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Star Artsy-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"How to Cook Without -RayQuazaFallout-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-RayquazaFallout-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cooking with -Fonny Munkeys-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Fonny Munkeys-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"-Paulevs- Cookbook\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Paulevs-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Against All -Hoonts-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Hoonts-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Easy Peasy -Landon- Squeezy\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Landon-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Capped -Max-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Max-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Street Spice from -Heaven-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Heaven-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"King Kook -Shivaxi-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Shivaxi-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cooking with -Bas-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Bas-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cooking with -Shivaxi-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Shivaxi-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cooking with -FM2-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-FM2-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cooking with -Landon-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Landon-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Medical Treatments with -Ichttt-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Ichttt-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Roasted Silverfish with -ivesiris the GoblinBob-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-ivesiris the GoblinBob-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Beefy Buckaroe by -FM2-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-FM2-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Illustrated Cabinetmaking with -Melonslise-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Melonslise-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Carpentry with -bl4ckscor3-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-bl4ckscor3-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Carpenters Handbook by -neonderg-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-neonderg-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Genius of -Goldenalpharex-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Goldenalpharex-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"First aid by -Kanederg the Toxic Hostik-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Kanederg the Toxic Hostik-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fishing with -TheAwesomeGem-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-TheAwesomeGem-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Survival Skills by -Heaven-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Heaven-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Trapping with -Jared-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Jared-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Apocalypse Cooking with -Dhanatry & Cephelo-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Dhanatry & Cephelo-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Yoga lessons by -Elenai-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Elenai-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"How to code by -Authvin-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Authvin-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Coding 101 by -PG85-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-PG85-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Coding made easy by -FM2-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-FM2-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"How to take care of pet rats by -Eagle-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Eagle-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fancy rats and their enclosures by -Fantasy-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Fantasy-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"How to skip by -Skippy Queen-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Skippy Queen-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Flash techniques by the -King of Flashes-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-King of Flashes-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Why should I sacrifice, by -Heaven-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Heaven-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Dummy guide to laughing by -The Retard-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-The Retard-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Introduction to Scuba by -Heaven & Eagle-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Heaven & Eagle-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Metal Lathe by -Bea BlueYeen-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Bea BlueYeen-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Ancient Civilizations by -Bleeder91-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Bleeder91-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Agriculture 101 by -Jiiamma-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Jiiamma-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Hoarder by -Machteld-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Machteld-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The properties of glass by -Machteld-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Machteld-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Psychology by -Frauk & Felice-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Frauk & Felice-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Paintings by -Vincent-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Vincent-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"When Heaven Fell down by -Mr Black-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Mr Black-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"When Eagles Fly by -Eagle-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Eagle-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Secondary Aid by the -Scalper-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Scalper-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Quests and Lore by -Phantom Fantasia-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Phantom Fantasia-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Combustion Engines by -CreativeMD-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-CreativeMD-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cartrographers Skills by -Tschipp-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Tschipp-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Metalworking Shops by -ObliviousSpartan-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-ObliviousSpartan-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Bountifull Living by -Cursed1nferno-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Cursed1nferno-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tailoring by -EnderLanky-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-EnderLanky-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fishing done well by -Emerald-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Emerald-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Foraging by -BlockVader-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-BlockVader-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Efficient Carpenter by -Titan-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Titan-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Basic Archery by -WhiteDraco-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-WhiteDraco-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Starviewing by -Xcube-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Xcube-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cabinet in 5 minutes by -Charles445-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Charles445-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Your one day house by -Ejektaflex-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Ejektaflex-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"WoodWorking with -Harleyoc1-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Harleyoc1-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Archeology with -Fnar-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Fnar-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Lore & Magic with -ShelterRin-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-ShelterRin-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Farming with -TwilightStar-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-TwilightStar-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Bridging with -Macaw-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Macaw-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Carpeting Commodities with -Noppes-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Noppes-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Spelunking with -Yung-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Yung-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Exploring with -Icebelly-\"}',Lore:['{\"text\":\"Unlike other ancient books this one\"}','{\"text\":\"mostly remains intact\"}'],LocNameArgs:[\"-Icebelly-\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

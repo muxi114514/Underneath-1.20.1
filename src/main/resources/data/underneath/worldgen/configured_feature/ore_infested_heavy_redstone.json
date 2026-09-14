@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 5,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:deepslate"
+        },
+        "state": {
+          "Name": "epca:infested_heavy_redstone"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "epca:infested_cobblestone"
+        },
+        "state": {
+          "Name": "epca:infested_heavy_redstone"
+        }
+      }
+    ]
+  }
+}

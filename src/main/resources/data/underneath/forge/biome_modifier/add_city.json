@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#underneath:has_city",
+  "features": "underneath:city_plot",
+  "step": "underground_structures"
+}

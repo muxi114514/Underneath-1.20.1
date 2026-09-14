@@ -1,0 +1,438 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "frozen",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.unsend_letters.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.unsend_letters.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.unsend_letters.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.unsend_letters.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.unsend_letters.page.5\\\"}]\"\n                ],\n                title:\"Unsend letters\",\n                locTitle:\"rldregora.frozen.unsend_letters.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.frozen.unsend_letters.author\",\n                display:{Lore:['{\"text\":\"An frozen book. The pages are unreadable but folded inside remains a letter.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.white_death.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.white_death.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.white_death.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.white_death.page.4\\\"}]\"\n                ],\n                title:\"White Death\",\n                locTitle:\"rldregora.frozen.white_death.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.frozen.white_death.author\",\n                display:{Lore:['{\"text\":\"A red stained frozen book of which half seems to be missing.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.uncanny_paradise.page.8\\\"}]\"\n                ],\n                title:\"Depths of Uncanny Paradise\",\n                locTitle:\"rldregora.frozen.uncanny_paradise.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.frozen.uncanny_paradise.author\",\n                display:{Lore:['{\"text\":\"A few loose pages seem all that remains of this journal.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.the_log.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.the_log.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.the_log.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.the_log.page.4\\\"}]\"\n                ],\n                title:\"The Log\",\n                locTitle:\"rldregora.frozen.the_log.title\",\n                author:\"Maurice\",\n                locAuthor:\"rldregora.frozen.the_log.author\",\n                display:{Lore:['{\"text\":\"The captain\\'s logbook\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.survival_basics.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.survival_basics.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.frozen.survival_basics.page.3\\\"}]\"\n                ],\n                title:\"Survival Basics\",\n                locTitle:\"rldregora.frozen.survival_basics.title\",\n                author:\"Unknown\",\n                locAuthor:\"rldregora.frozen.survival_basics.author\",\n                display:{Lore:['{\"text\":\"As you open the book a letter falls out.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "frozen_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "frost_walker",
+                "depth_strider",
+                "vanishing_curse",
+                "frost_walker",
+                "feather_falling",
+                "respiration",
+                "aqua_affinity",
+                "sweeping"
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:7,Duration:10,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:22,Duration:16,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:25,Duration:10,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:7,Duration:20,Amplifier:2},{Id:14,Duration:20,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:24,Duration:15,Amplifier:1},{Id:17,Duration:15,Amplifier:1},{Id:7,Duration:15,Amplifier:1},{Id:19,Duration:15,Amplifier:1},{Id:1,Duration:15,Amplifier:1},{Id:5,Duration:15,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:fishing_rod_wood",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_horse_armor",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ice",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

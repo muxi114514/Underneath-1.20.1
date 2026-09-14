@@ -1,0 +1,29 @@
+# Gradle
+build/
+.gradle/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.classpath
+.project
+bin/
+out/
+
+# Run directory
+run/
+run-data/
+
+# Compiled
+*.class
+
+# Logs
+logs/
+*.log
+
+# Dev pipeline scripts and caches are versioned assets (single source of truth
+# for generated data packs) - only exclude Python bytecode
+dev/__pycache__/

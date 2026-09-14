@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "underneath:block/concrete_stairs_reinforced",
+    "top": "underneath:block/concrete_stairs_reinforced",
+    "side": "underneath:block/concrete_stairs_reinforced"
+  }
+}

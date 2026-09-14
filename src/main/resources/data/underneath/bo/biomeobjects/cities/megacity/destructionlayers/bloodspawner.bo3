@@ -1,0 +1,23 @@
+Author: NLBlackEagle
+Description: No description given
+Version: 3
+SettingsMode: WriteDisable
+Tree: true
+Frequency: 100
+Rarity: 100.0
+RotateRandomly: false
+SpawnHeight: randomY
+SpawnHeightOffset: 0
+SpawnHeightVariance: 0
+MinHeight: 60
+MaxHeight: 255
+ExtrudeMode: None
+ExtrudeThroughBlocks: AIR
+MaxBranchDepth: 10
+ExcludedBiomes: All
+SourceBlocks: STATIONARY_WATER,CONCRETE,WATER
+MaxPercentageOutsideSourceBlock: 0
+OutsideSourceBlock: placeAnyway
+DoReplaceBlocks: false
+IsOTGPlus: false
+RandomBlock(0,0,0,biomesoplenty:blood,50,biomesoplenty:flesh,100)

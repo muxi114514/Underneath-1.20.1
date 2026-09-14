@@ -1,0 +1,97 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "dt_bpdead_big_01",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_02",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_03",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_04",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_05",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_06",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_07",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_08",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_09",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_10",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_11",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_12",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_13",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_14",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_15",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_16",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_17",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_18",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_19",
+        "chance": 10
+      },
+      {
+        "name": "dt_bpdead_big_20",
+        "chance": 10
+      }
+    ],
+    "attempts": 10,
+    "anchor": "floor",
+    "min_y": 63,
+    "max_y": 80,
+    "y_offset": -1,
+    "random_rotation": false,
+    "on_blocks": [
+      "minecraft:grass_block",
+      "minecraft:dirt"
+    ]
+  }
+}

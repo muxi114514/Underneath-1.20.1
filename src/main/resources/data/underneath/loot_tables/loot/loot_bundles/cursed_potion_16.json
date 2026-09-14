@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Lingering Potion of Immortality\"}',Lore:['{\"text\":\"§r§9Immortality (~)     §0⌚\"}','{\"text\":\"\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9Immortality\"}']},CustomPotionEffects:[{Id:27,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:15,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:17,Duration:99999999,ShowParticles:0b,ShowIcon:0b},{Id:14,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:4,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:11,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:13,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b}], CustomPotionColor:0, HideFlags:32}"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Splash Potion of Immortality\"}',Lore:['{\"text\":\"§r§9Immortality (~)     §0⌚\"}','{\"text\":\"\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9Immortality\"}']},CustomPotionEffects:[{Id:27,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:15,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:17,Duration:99999999,ShowParticles:0b,ShowIcon:0b},{Id:14,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:4,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:11,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:13,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b}], CustomPotionColor:0, HideFlags:32}"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Potion of Immortality\"}',Lore:['{\"text\":\"§r§9Immortality (~)     §0⌚\"}','{\"text\":\"\"}','{\"text\":\"§5When Applied:\"}','{\"text\":\"§9Immortality\"}']},CustomPotionEffects:[{Id:27,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:15,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:17,Duration:99999999,ShowParticles:0b,ShowIcon:0b},{Id:14,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:4,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:11,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:13,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:99999999,Amplifier:99,ShowParticles:0b,ShowIcon:0b}], CustomPotionColor:0, HideFlags:32}"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

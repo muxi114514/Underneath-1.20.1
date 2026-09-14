@@ -1,0 +1,87 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "city_latticestand_4m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_5m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_6m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_7m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_8m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_9m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_10m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_11m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticestand_12m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_4m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_5m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_6m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_7m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_8m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_9m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_10m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_11m",
+        "chance": 100
+      },
+      {
+        "name": "city_latticehang_12m",
+        "chance": 100
+      }
+    ],
+    "attempts": 0,
+    "anchor": "random",
+    "min_y": 100,
+    "max_y": 250,
+    "y_offset": 0,
+    "random_rotation": false,
+    "on_blocks": [],
+    "mode": "custom_object"
+  }
+}

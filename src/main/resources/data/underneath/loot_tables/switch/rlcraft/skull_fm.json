@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "toilet_skull",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner: fonnymunkey, display:{Name:'{\"text\":\"FM2\"}',Lore:['{\"text\":\"...Skibidi.\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_blast_protection",
+                "minecraft:knockback",
+                "jlme:viper",
+                "jlme:advanced_power",
+                "minecraft:punch"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback",
+                "bettersurvival:highjump",
+                "minecraft:knockback",
+                "bettersurvival:rapidfire",
+                "bettersurvival:multishot",
+                "minecraft:sharpness",
+                "jlme:double_edge",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:quick_charge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback",
+                "bettersurvival:highjump",
+                "minecraft:knockback",
+                "bettersurvival:rapidfire",
+                "bettersurvival:multishot",
+                "minecraft:sharpness",
+                "jlme:double_edge",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:quick_charge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback",
+                "bettersurvival:highjump",
+                "minecraft:knockback",
+                "bettersurvival:rapidfire",
+                "bettersurvival:multishot",
+                "minecraft:sharpness",
+                "jlme:double_edge",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:quick_charge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback",
+                "bettersurvival:highjump",
+                "minecraft:knockback",
+                "bettersurvival:rapidfire",
+                "bettersurvival:multishot",
+                "minecraft:sharpness",
+                "jlme:double_edge",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:power",
+                "minecraft:quick_charge"
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

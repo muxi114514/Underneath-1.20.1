@@ -1,0 +1,1685 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Unique Epic Weapons",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_epic/loot_bundle/sting_mithril",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_epic/loot_bundle/gandalf_staff",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/unique_loot_epic/loot_bundle/demonic_staff",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:flamed_dragon_bone_quarterstaff",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"simple_difficulty:burst\",remainingPotionHits:1000000,display:{Name:'{\"text\":\"Megumin\\'s Staff\"}',Lore:['{\"text\":\"EXPLOSION!!!!!!!!!\"}','{\"text\":\"A rather explosive relic...\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:binding_curse\",lvl:10s},{id:\"minecraft:vanishing_curse\",lvl:10s},{id:\"jlme:vulnerability\",lvl:10s},{id:\"minecraft:knockback\",lvl:10s},{id:\"jlme:executioner\",lvl:10s},{id:\"jlme:critical_strike\",lvl:10s},{id:\"jlme:ash_destroyer\",lvl:10s},{id:\"jlme:advanced_fire_aspect\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:10s}]}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "trumpetskeleton:trumpet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"simple_difficulty:launch\",remainingPotionHits:1000000,display:{Name:'{\"text\":\"Eternal Dooter\"}',Lore:['{\"text\":\"DOOOOOTTTTTTTT!!!!!!!!\"}','{\"text\":\"The trumpet, the relic, the one that sends them flying\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:10s},{id:\"minecraft:unbreaking\",lvl:10s}]}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:desert_myrmex_stinger_dagger",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:regeneration\",remainingPotionHits:1000000,display:{Name:'{\"text\":\"Dagger of Vitality\"}',Lore:['{\"text\":\"For neither friend nor foe will this dagger deal a decisive blow.\"}','{\"text\":\"Relic of Vitality\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"jlme:lifesteal\",lvl:3s}]}"
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:vampirism"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": 0.25,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 1.5,
+                    "max": 3.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:flamed_dragon_bone_scythe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Scythe of Bountiful Risk\"}',Lore:['{\"text\":\"For the brave and bold of this unfair world.\"}','{\"text\":\"- Epic Collectable -\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"jlme:supreme_sharpness\",lvl:10s}]}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:lifesteal"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": -0.95,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": -0.95,
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:dragon_bone_katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"bettersurvival:blindness\",remainingPotionHits:42069,display:{Name:'{\"text\":\"Heaven\\'s Blade\"}',Lore:['{\"text\":\"May Heaven Strike Your Enemies Blind!\"}','{\"text\":\"Dark blade of relics, the one that casts night upon those stricken\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:3s}]}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:heavy"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0,
+                    "max": 0.15
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 0.15
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:troll_weapon_hammer",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Lesser Ban Hammer\"}',Lore:['{\"text\":\"Dragonsteel you say? Banned!\"}','{\"text\":\"The lesser of the two hammers yet a powerful relic on it\\'s own\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:3s}]}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:heavy"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:troll_weapon_column",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Obelisk\"}',Lore:['{\"text\":\"Obelisk\\'s Obelisk\"}','{\"text\":\"From before the before times, a relic from Germania\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:heavy"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 0,
+                    "max": 0.18
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:dread_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Nullpointer\"}',Lore:['{\"text\":\"Divide them by zero!\"}','{\"text\":\"Sword of glitch, bugger, this relic rips apart the fabric of time\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"jlme:executioner\",lvl:10s}]}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 0,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:bo_staff",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Stick of Bonk\"}',Lore:['{\"text\":\"Does Bonk!\"}','{\"text\":\"Staff of staffs, a relic both strong as sturdy\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:chicken_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\",remainingPotionHits:420,display:{Name:'{\"text\":\"The Big Skibidi\"}',Lore:['{\"text\":\"Toilet Humor...\"}','{\"text\":\"Ancient relic and meme, sturdy for it withstood time\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:vampirism"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:brutal_hits"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:dragon_bone_spear",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:poison\",remainingPotionHits:6969,display:{Name:'{\"text\":\"Gungnir\"}',Lore:['{\"text\":\"Odin\\'s Spear\"}','{\"text\":\"Beautifully crafted ancient relic\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:unbreaking"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:mending"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:armor_piercing"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:piercing_capabilities"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:arrow_piercing"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:supreme_sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:critical_strike"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:light_weight"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:disarm"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:loyalty"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:agility"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:armor_piercing"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanfire_rlc:lightning_dragon_bone_javelin",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"simple_difficulty:lightning\",remainingPotionHits:6969,display:{Name:'{\"text\":\"Keraunos\"}',Lore:['{\"text\":\"For Olympus!!\"}','{\"text\":\"Keraunos, the relic loyal to it\\'s wielder\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:unbreaking"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:supreme_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:mending"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:loyalty"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "bettersurvival:itemancientmetalhammer",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"simple_difficulty:lightning\",remainingPotionHits:6969,display:{Name:'{\"text\":\"Mjolnir\"}',Lore:['{\"text\":\"Thor\\'s Hammer\"}','{\"text\":\"From before the blight and even the origins, this is a relic of old\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:heavy"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:heavy_weight"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:unbreaking"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.08
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:bronze_dagger",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"simple_difficulty:fire\",remainingPotionHits:1000,display:{Name:'{\"text\":\"Melt\\'exun\"}',Lore:['{\"text\":\"Slices through everything like butter\"}','{\"text\":\"This relic is said to harness the heat of the Blight itself\"}']}}"
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:heating"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_fire_aspect"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:heating"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:fire_aspect"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:heating"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:lava_strider"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:flame"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 0.8
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:katana",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Honjo Masamune\"}',Lore:['{\"text\":\"The legendary vanishing katana of old origins.\"}','{\"text\":\"May this relic serve you for longer days\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:lethal_cadence"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:parry"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:sweeping"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_fire_aspect"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:swifter_slashes"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:unbreaking"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.08
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 0.8
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:broken_bottle",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_speed",
+                  "name": "attackSpeed",
+                  "amount": {
+                    "min": 0,
+                    "max": 0.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 3
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Kotlin\"}',Lore:['{\"text\":\"Fonny\\'s bane\"}','{\"text\":\"May the code imbued in this relic touch thou enemies and confuse them\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:punch"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:assassinate"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:parry"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:vampirism"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:critical_strike"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:knockback"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "locks:complexity"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.08
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "forge:entity_reach",
+                  "name": "reachDistance",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 0.8
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 1,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:cleaver",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Cleaver\"}',Lore:['{\"text\":\"For your every day butchering!\"}','{\"text\":\"No scale too hard, no bone too thick for this relic wil rip\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:looting"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:double_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:supreme_sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:binding_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:butcher"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:brutal_hits"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:assassinate"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:frost_dagger",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sting Ray\"}',Lore:['{\"text\":\"Useful in case of abductions!\"}','{\"text\":\"May this relic piece straight and decisive\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:armor_piercing"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:armor_piercing"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.05,
+                    "max": 0.2
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:excalibur",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Excalibur\"}',Lore:['{\"text\":\"For Camelot!\"}','{\"text\":\"May this relic grant you vitality in your battles\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"jlme:lifesteal\",lvl:1s}]}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:sweeping"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_fire_aspect"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:vitality"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:critical_strike"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_smite"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 1,
+                    "max": 6
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 0.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:emerald_dagger",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"The Shiv\"}',Lore:['{\"text\":\"Get Shivved!\"}','{\"text\":\"May this relic, the Shiv Serve you Supremely\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:supreme_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "locks:complexity"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:education"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:sharpness"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.05,
+                    "max": 0.15
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:sai",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Eagle\\'s Claw\"}',Lore:['{\"text\":\"Get Eagle\\'d!\"}','{\"text\":\"This relic strikes your foes with Eagle\\'s Math\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:assassinate"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:critical_strike"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:unbreaking"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:crippling_edge"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:supreme_smite"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Regular Loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"text\\\":\\\"\n\n\n\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"         \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"▌▌▌\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"       \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\"       ██▌███\\\"},{\\\"color\\\":\\\"blue\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover1\\\"}},\\\"text\\\":\\\" \\\"}]\"\n                ],\n                title:\"Legendary Book of §4Luck\",\n                locTitle:\"rlcraft.rlcraft_infuse_legendary.legendary_luck.title\",\n                author:\"Clover Hunderd\",\n                locAuthor:\"rlcraft.rlcraft_infuse_legendary.legendary_luck.author\",\n                display:{Lore:['{\"text\":\"Can you solve its riddles and claim your treasure next time?\"}']},\n                Enchantments:[{}],\n                HideFlags:1\n              }"
+            }
+          ],
+          "weight": 1,
+          "quality": -1000
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"text\\\":\\\"\n\n\n\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"         \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"▌▌▌\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"       \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\"       ██▌███\\\"},{\\\"color\\\":\\\"blue\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"translate\\\":\\\"rlcraft.rlcraft_infuse_legendary.legendary_luck.hover2\\\"}},\\\"text\\\":\\\" \\\"}]\"\n                ],\n                title:\"Legendary Book of §4Luck\",\n                locTitle:\"rlcraft.rlcraft_infuse_legendary.legendary_luck.title\",\n                author:\"Clover Hunderd\",\n                locAuthor:\"rlcraft.rlcraft_infuse_legendary.legendary_luck.author\",\n                display:{Lore:['{\"text\":\"For you solved its riddle the treasure is yours!\"}']},\n                Enchantments:[{}],\n                HideFlags:1\n              }"
+            }
+          ],
+          "weight": 0,
+          "quality": 200
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "simple_difficulty:heart_crystal",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "roughtweaks:medkit_enchanted",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:bezoar",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:apple",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:vitamins",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:broken_black_dragon_scale",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:obsidian_skull",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:amulet_sin_empty",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:broken_heart",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:amulet_cross",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:disintegration_tablet",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulcurios:balloon",
+          "weight": 0,
+          "quality": 2
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/rlcraft_infuse_epic",
+          "weight": 0,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}

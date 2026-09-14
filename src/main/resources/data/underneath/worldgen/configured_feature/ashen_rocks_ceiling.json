@@ -1,0 +1,19 @@
+{
+  "type": "underneath:bo_scatter",
+  "config": {
+    "objects": [
+      {
+        "name": "ashen_rock_ceiling",
+        "chance": 100
+      }
+    ],
+    "attempts": 0,
+    "anchor": "random",
+    "min_y": 100,
+    "max_y": 200,
+    "y_offset": 0,
+    "random_rotation": true,
+    "on_blocks": [],
+    "mode": "custom_object"
+  }
+}

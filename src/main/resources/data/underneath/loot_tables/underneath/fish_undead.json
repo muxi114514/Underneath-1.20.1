@@ -1,0 +1,350 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:brutaltowers/rare_no_junk",
+          "weight": 6
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:rlcraft/rlcraft_infuse_epic",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "name": "fish_undead",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:diamond_flanged_mace",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion: \"simple_difficulty:launch\", remainingPotionHits: 6969, display:{Lore:['{\"text\":\"An ancient heavy relic passed down the Royal Fonny Family\"}','{\"text\":\"Thought to be forever lost to the wicked cities of the corrupted.\"}']}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:knockback\",lvl:50s}],HideFlags:2}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_helmet",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:ancient_coin",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:holyhandgrenade",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_sword",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:goat_horn",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_boots",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_leggings",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_chestplate",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "weight": 70
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_dagger",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:iron_dagger",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.2,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:suspicious_stew",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 25
+              }
+            }
+          ],
+          "weight": 90
+        },
+        {
+          "type": "item",
+          "name": "minecraft:magma_cream",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 25
+              }
+            }
+          ],
+          "weight": 80
+        }
+      ]
+    }
+  ]
+}

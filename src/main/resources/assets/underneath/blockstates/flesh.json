@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      { "model": "underneath:block/flesh" },
+      { "model": "underneath:block/flesh", "y": 90 },
+      { "model": "underneath:block/flesh", "y": 180 },
+      { "model": "underneath:block/flesh", "y": 270 },
+      { "model": "underneath:block/flesh_alt" },
+      { "model": "underneath:block/flesh_alt", "y": 90 },
+      { "model": "underneath:block/flesh_alt", "y": 180 },
+      { "model": "underneath:block/flesh_alt", "y": 270 }
+    ]
+  }
+}

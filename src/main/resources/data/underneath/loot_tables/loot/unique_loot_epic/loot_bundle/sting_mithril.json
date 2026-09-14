@@ -1,0 +1,188 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Sting",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "variedcommodities:mithril_dagger",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Sting\"}',Lore:['{\"text\":\"This dagger seems to always give off a bright glow...\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "minecraft:sharpness"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_smite"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:light_weight"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "bettersurvival:disarm"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:critical_strike"
+              ]
+            },
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:supreme_ba"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:parry"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.08
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 0.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mithril Shirt",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "variedcommodities:mithril_chest",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Mithril Shirt\"}',Lore:['{\"text\":\"As light as a feather, and as hard as dragon scales.\"}']}}"
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_fire_protection"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_projectile_protection"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_protection"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_blast_protection"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "jlme:advanced_protection"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.armor_toughness",
+                  "name": "Armor",
+                  "amount": {
+                    "min": 10,
+                    "max": 20
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 0.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

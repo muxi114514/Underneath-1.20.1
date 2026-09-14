@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Potion Spawns for in the City",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/rlcraft/city",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

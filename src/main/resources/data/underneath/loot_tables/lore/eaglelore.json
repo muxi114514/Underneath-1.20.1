@@ -1,0 +1,302 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "eaglelore",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.undead_curse.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.undead_curse.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.undead_curse.page.3\\\"}]\"\n                ],\n                title:\"My Undead Curse\",\n                locTitle:\"rldregora.eaglelore.undead_curse.title\",\n                author:\"- Heaven, The Wise -\",\n                locAuthor:\"rldregora.eaglelore.undead_curse.author\",\n                display:{Lore:['{\"text\":\"Book of Heaven\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.10\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.11\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.12\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.13\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.14\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.15\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.world_days_past.page.16\\\"}]\"\n                ],\n                title:\"The world of days past\",\n                locTitle:\"rldregora.eaglelore.world_days_past.title\",\n                author:\"- Eagle, The Founder -\",\n                locAuthor:\"rldregora.eaglelore.world_days_past.author\",\n                display:{Lore:['{\"text\":\"Book of Eagle\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.ends_bring_salvation.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.eaglelore.ends_bring_salvation.page.2\\\"}]\"\n                ],\n                title:\"As ends bring salvation\",\n                locTitle:\"rldregora.eaglelore.ends_bring_salvation.title\",\n                author:\"- Sam, - The Knowledgeable -\",\n                locAuthor:\"rldregora.eaglelore.ends_bring_salvation.author\",\n                display:{Lore:['{\"text\":\"Book of Sam\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "eaglelore_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_hoe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:firework_rocket",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

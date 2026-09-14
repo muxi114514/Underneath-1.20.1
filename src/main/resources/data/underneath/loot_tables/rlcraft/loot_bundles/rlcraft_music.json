@@ -1,0 +1,153 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "RLCraft Music",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mellohi",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_stal",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_strad",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_far",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mall",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mellohi",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_stal",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "betterend:music_disc_eo_dracona",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "betterend:music_disc_grasping_at_stars",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "betterend:music_disc_strange_and_alien",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "betternether:music_disc_gloom_wisps",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "betternether:music_disc_gloom_woods",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_blocks",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_chirp",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_far",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mall",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_mellohi",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_stal",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_cat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_blocks",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_chirp",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_far",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "biomeswevegone:music_disc_better_days",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "biomeswevegone:music_disc_pixie_club",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "supplementaries:music_disc_heave_ho",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "betterend:music_disc_strange_and_alien",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_pigstep",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "trumpetskeleton:trumpet",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

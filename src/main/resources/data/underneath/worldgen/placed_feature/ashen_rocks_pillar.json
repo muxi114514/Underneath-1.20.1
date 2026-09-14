@@ -1,0 +1,8 @@
+{
+  "feature": "underneath:ashen_rocks_pillar",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+Author: NLBlackEagle
+Description: No description given
+Version: 3
+SettingsMode: WriteWithoutComments
+Tree: true
+Frequency: 200
+Rarity: 100.0
+RotateRandomly: false
+SpawnHeight: randomY
+SpawnHeightOffset: 0
+SpawnHeightVariance: 0
+MinHeight: 100
+MaxHeight: 250
+ExtrudeMode: None
+ExtrudeThroughBlocks: AIR
+MaxBranchDepth: 10
+ExcludedBiomes: All
+SourceBlocks: AIR
+MaxPercentageOutsideSourceBlock: 0
+OutsideSourceBlock: placeAnyway
+DoReplaceBlocks: true
+IsOTGPlus: false
+Block(0,0,0,rustic:iron_lattice:0)
+Block(0,-1,0,rustic:iron_lattice:0)
+Block(0,-2,0,rustic:iron_lattice:0)
+Block(0,-3,0,rustic:iron_lattice:0)
+Block(0,-4,0,rustic:iron_lattice:0)
+Block(0,-5,0,rustic:iron_lattice:0)
+Block(0,-6,0,rustic:iron_lattice:0)
+Block(0,-7,0,rustic:iron_lattice:0)
+LightCheck(0,0,0,0,14)
+BlockCheck(0,1,0,CONCRETE,CONCRETE_POWDER,STAINED_CLAY)

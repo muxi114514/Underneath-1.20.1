@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/rlcraft/milk",
+          "weight": 0,
+          "quality": -1000
+        }
+      ]
+    }
+  ]
+}

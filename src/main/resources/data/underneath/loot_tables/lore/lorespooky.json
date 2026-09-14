@@ -1,0 +1,331 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "lorespooky",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.4\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.5\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.6\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.7\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.8\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.9\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.10\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.11\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.12\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.moonlit_trap.page.13\\\"}]\"\n                ],\n                title:\"The Moonlit Trap.\",\n                locTitle:\"rldregora.lorespooky.moonlit_trap.title\",\n                author:\"Krandir the Hunter\",\n                locAuthor:\"rldregora.lorespooky.moonlit_trap.author\",\n                display:{Lore:['{\"text\":\"A Hunter\\'s encounter with the Legend of the Trap.\"}']}\n              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.lone_church.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.lone_church.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.lone_church.page.3\\\"}]\"\n                ],\n                title:\"The Lone Church\",\n                locTitle:\"rldregora.lorespooky.lone_church.title\",\n                author:\"The First Priest\",\n                locAuthor:\"rldregora.lorespooky.lone_church.author\",\n                display:{Lore:['{\"text\":\"The trial of the Wither Priest.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.cages_greywoods.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.cages_greywoods.page.2\\\"}]\"\n                ],\n                title:\"The Hanging Cages of Greywoods\",\n                locTitle:\"rldregora.lorespooky.cages_greywoods.title\",\n                author:\"The Beast that Lurks\",\n                locAuthor:\"rldregora.lorespooky.cages_greywoods.author\",\n                display:{Lore:['{\"text\":\"Christmas Trees, Red floods and Steel Cages.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.greywood_crimson_bellows.page.1\\\"}]\"\n                ],\n                title:\"GreyWood Crimson Bellows\",\n                locTitle:\"rldregora.lorespooky.greywood_crimson_bellows.title\",\n                author:\"The Devourer\",\n                locAuthor:\"rldregora.lorespooky.greywood_crimson_bellows.author\",\n                display:{Lore:['{\"text\":\"A book written with teeth and blood.\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "\n              {\n                pages:\n                [\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.whispers_treasure.page.1\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.whispers_treasure.page.2\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.whispers_treasure.page.3\\\"}]\",\n                  \"[{\\\"translate\\\":\\\"rldregora.lorespooky.whispers_treasure.page.4\\\"}]\"\n                ],\n                title:\"Whispers of treasure and blood\",\n                locTitle:\"rldregora.lorespooky.whispers_treasure.title\",\n                author:\"Captain Kjetill\",\n                locAuthor:\"rldregora.lorespooky.whispers_treasure.author\",\n                display:{Lore:['{\"text\":\"A blood stained journal. One entry remains readable..\"}']}\n              }",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Totem of §l§6Legendary§r Luck\"}',Lore:['{\"text\":\"Noice!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.69,
+                    "max": 1.69
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "underneath:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "lorespooky_bonus",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "weight": 0,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Cleaver\"}',Lore:['{\"text\":\"A cursed hoe\"}']}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "vanishing_curse"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0.4,
+                    "max": 1.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.max_health",
+                  "name": "Less Health",
+                  "amount": {
+                    "min": -4.0,
+                    "max": -10.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.movement_speed",
+                  "name": "More Movement Speed",
+                  "amount": {
+                    "min": 0.02,
+                    "max": 0.06
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lorespooky_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.8
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "vanishing_curse",
+                "binding_curse"
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobweb",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

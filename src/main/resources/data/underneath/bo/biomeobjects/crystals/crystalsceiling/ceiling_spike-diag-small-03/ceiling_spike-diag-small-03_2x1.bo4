@@ -1,0 +1,30 @@
+Author: Bo3 BulkEdit
+Description: Converted Schematic - Modified by Bo3BulkEdit
+Version: 3
+SettingsMode: WriteDisable
+IsOTGPlus: true
+Tree: false
+Frequency: 1
+Rarity: 100.0
+RotateRandomly: false
+SpawnHeight: randomY
+MaxBranchDepth: 10
+ExcludedBiomes: All
+MinHeight: 0
+MaxHeight: 255
+CanOverride: true
+MaxPercentageOutsideSourceBlock: 100
+OutsideSourceBlock: placeAnyway
+BO3Group: CeilingCrystals:0
+B(0,750,0,AIR)
+B(15,750,15,AIR)
+B(0,-18,14,betternether:quartz_stained_glass:15)
+B(0,-18,15,betternether:quartz_stained_glass:15)
+B(0,-17,14,betternether:quartz_stained_glass:15)
+B(0,-17,15,betternether:quartz_stained_glass:15)
+B(1,-17,15,betternether:quartz_stained_glass:15)
+B(0,-16,13,betternether:quartz_stained_glass:15)
+B(0,-16,14,betternether:quartz_stained_glass:15)
+B(0,-16,15,betternether:quartz_stained_glass:15)
+B(0,-15,13,betternether:quartz_stained_glass:15)
+B(0,-15,14,betternether:quartz_stained_glass:15)

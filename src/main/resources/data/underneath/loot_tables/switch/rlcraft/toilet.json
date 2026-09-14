@@ -1,0 +1,340 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "toilet_loot",
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "underneath:switch/rlcraft/skull_fm",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "vinery:wine_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Fluid: {FluidName: \"wine\", Amount: 1000}, display:{Name:'{\"text\":\"Old bottle of makeshift prison wine.\"}',Lore:['{\"text\":\"Looks like ass. Smells like ass.. tastes like... Nevermind.\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Fluid: {FluidName: \"wine\", Amount: 1000}, display:{Name:'{\"text\":\"Old bottle of Hooch\"}',Lore:['{\"text\":\"Bottled Botulism\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"That is a Brick, is it?\"}',Lore:['{\"text\":\"Fossilized.. Brick! Or...? Uhmm lets not think about that...\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"That is a big brick!\"}',Lore:['{\"text\":\"A brick from unknown origin. It appears to be fossilized. Why does it smell so funky though?\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"That is a Brick... Right..?\"}',Lore:['{\"text\":\"When you see it...\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"That is a Brick... Right..?\"}',Lore:['{\"text\":\"Someone left a Brick here...\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skeleton_skull",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Reeking Skull ☠\"}',Lore:['{\"text\":\"This skull deserved better...\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Stinky Skull ☠\"}',Lore:['{\"text\":\"It reeks...\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Smelly Skull ☢\"}',Lore:['{\"text\":\"Yugh....\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "betternether:red_mold",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Stinky Red Mold ☠\"}',Lore:['{\"text\":\"Reeks of a dimensional fart...\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Disgusting Red Mold ☢\"}',Lore:['{\"text\":\"It reeks of filthy corruption...\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fleshy Mold ☠\"}',Lore:['{\"text\":\"Brrr... Horrifying.\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Stinky Fish Bones ☢\"}',Lore:['{\"text\":\"Fish and Horror...\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Disgusting Fish ⚠\"}',Lore:['{\"text\":\"Fish and Chills\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "lycanitesmobs:poopcharge",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Turd ☢\"}',Lore:['{\"text\":\"This has gone Nuclear!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Discharge ‼✖\"}',Lore:['{\"text\":\"Yugh! Never heard of flushing!?\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clay_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Poop ☢\"}',Lore:['{\"text\":\"Shite!!\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Poop ☢\"}',Lore:['{\"text\":\"Rancid!!\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Crappy Mud Ball ‼✖\"}',Lore:['{\"text\":\"Crap! That is no mud ball!!\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Dookie ‼✖\"}',Lore:['{\"text\":\"Squeedily Spooch!\"}']}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:suspicious_stew",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Suspicious Soup From a Ancient Toilet ☢\"}',Lore:['{\"text\":\"Yeah...\"}']}}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cocoa_beans",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Brown Smelly Substance ☠\"}',Lore:['{\"text\":\"Why am i even looking in here?!☢╳✖\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "tag": "{display:{Name:'{\"text\":\"Brown Smelly Substance ☢\"}',Lore:['{\"text\":\"That is disgusting!⚠☠\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "tag": "{display:{Name:'{\"text\":\"Brown Smelly Substance ☠\"}',Lore:['{\"text\":\"Enough toilet looting for me!☠\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "tag": "{display:{Name:'{\"text\":\"Brown Smelly Substance ☢\"}',Lore:['{\"text\":\"What else did I expect?‼☒\"}']}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "tag": "{display:{Name:'{\"text\":\"Brown Smelly Substance ☠\"}',Lore:['{\"text\":\"Ohh noo!☢☠ Nope, I am out!⚠☒\"}']}}"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Brown Fish ☠\"}',Lore:['{\"text\":\"It came from a toilet...\"}']}}"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Potion of Mystery Content\"}',Lore:['{\"text\":\"Probably not Apple Juice...\"}']},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "tag": "{display:{Name:'{\"text\":\"Potion of Apple Juice?\"}',Lore:['{\"text\":\"Looks like apple juice right?\"}']},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ],
+              "tag": "{display:{Name:'{\"text\":\"Rebranded Apple Juice\"}',Lore:['{\"text\":\"The attached note says it is\"}','{\"text\":\"Rebranded Apple Juice...\"}']},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ],
+              "tag": "{display:{Name:'{\"text\":\"Rebranded Apple Juice\"}',Lore:['{\"text\":\"The attached note says it is\"}','{\"text\":\"Rebranded Apple Juice...\"}','{\"text\":\"This one is signed by Kekistani?\"}']},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
