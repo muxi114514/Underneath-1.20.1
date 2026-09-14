@@ -50,7 +50,9 @@ Lycanites(1.20.1-alpha✅)、DynamicTrees✅、ScalingHealth✅。**需替换**�
   **血焰打火石=传送门唯一点火钥匙（2026-09-14·用户拍板·已实装）**：合成=回响碎片+`betternether:cincinnasite`（无序，配方带 forge:mod_loaded 条件）——古城的材料开古城的门；原版打火石不再能点门（PortalIgniteHandler 判定改 `ModItems.BLOOD_FLINT_AND_STEEL`）。普通使用打出**血焰**（`block/BloodFireBlock`=SoulFireBlock 模式：烧实体不蔓延、光12、只换色本质是火；营火/蜡烛照常 super）。贴图=`dev/paint_flint.py` 调色管线（打火石按亮度分区：暗区燧石→echo_shard 梯度青、亮区钢→cincinnasite 梯度金，色板从两物品贴图现场采样；血焰=原版 fire_0/1 色相压向血红 V×0.88，含 mcmeta 复制）。**废墟门箱子语境改造**：`portal_overworld_low.bo3` 的箱=`bone_with_flint.nbt`→表 `underneath:underneath/bone_with_flint`→三张 flint 子表定点替换（port_loot_tables `TABLE_TWEAKS`，勿全局映射）：flint_1 打火石→血焰打火石/flint_2 燧石+铁粒→回响碎片+辛西纳石/flint_3 燧石→回响碎片；404 表重跑+三维校验三零。
   **P0b 验收（重编后）**：①合成血焰打火石（回响碎片+辛西纳石）；创造栏工具页有之；对地面右键=血红色火焰；②主世界 `/locate structure minecraft:ancient_city`→中央巨门内用**血焰打火石**点燃→整幅暗红门帘（原版打火石应点不成门；底边不平则观察 shape 失败情况回报）；③进门→穹顶顶面出现小强化深板岩锚点门、身处其中；试挖/爆=不可破坏；④重力=原版、从穹顶跳下主腔摔伤≈5 心重伤不死（摔距 ×0.1）；⑤底腔找 portal_overworld 废墟→开 Remnant Flint Chest 应出血焰打火石/回响碎片/辛西纳石→补 2 块灰烬石点燃 2×6 门→出去=主世界地表灰烬石门；⑥拆主世界灰烬门→门灭；原地重搭点火=只出血焰不成门 ✓ 语义；⑦回穹顶锚点门可反复往返；128 格内不重复造门。
 
-## 五、构建
+## 五、构建与仓库
+
+- **GitHub**：`https://github.com/muxi114514/Underneath-1.20.1`（main 分支·2026-09-14 首推）。**协议 ARR**（LICENSE 英文版含 Dregora/OTG 第三方归属注记）；**提交规范：英文 message、作者只归 muxi114514 本人、绝不加任何 AI 署名尾注**（用户明令）。`.gitignore` 已改：dev/ 脚本资产入库（单一事实源），仅排 `__pycache__`。
 
 - JDK17：`C:\Program Files\Zulu\zulu-17`；`org.gradle.daemon=false`（gradle.properties 已设）。
 - `gradlew build` → 产物 `build/libs/Underneath-1.20.1-1.0.jar`。
